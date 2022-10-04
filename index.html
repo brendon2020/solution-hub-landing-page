@@ -4,16 +4,18 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SolutionHub-LandingPage</title>
+<title>Web 1280 – 1</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: SolutionHub-LandingPage;
-		--web-view-id: SolutionHub-LandingPage;
+		--web-view-name: Web 1280 – 1;
+		--web-view-id: Web_1280__1;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: SolutionHub-LandingPage;
+		--web-view-ids: Web_1280__1;
 	}
 	* {
 		margin: 0;
@@ -21,38 +23,329 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#SolutionHub-LandingPage {
+	#Web_1280__1 {
 		position: absolute;
-		width: 1920px;
-		height: 4037px;
-		background-color: rgba(7,7,7,1);
+		width: 1280px;
+		height: 3905px;
+		background-color: rgba(0,0,0,1);
 		overflow: hidden;
-		--web-view-name: SolutionHub-LandingPage;
-		--web-view-id: SolutionHub-LandingPage;
+		--web-view-name: Web 1280 – 1;
+		--web-view-id: Web_1280__1;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	#AdobeStock_372797275 {
-		opacity: 0.4;
-		filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+
+	.glow-on-hover {
+		border: none;
+		outline: none;
+		color: #fff;
+		background: #fff;
+		cursor: pointer;
+		position: relative;
+		z-index: 0;
+		border-radius: 30px;
+	}
+
+	.glow-on-hover:before {
+		content: '';
+		background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
 		position: absolute;
-		width: 1920px;
-		height: 1200px;
-		left: 0px;
-		top: 143px;
+		top: -2px;
+		left:-2px;
+		background-size: 400%;
+		z-index: -1;
+		filter: blur(5px);
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		animation: glowing 20s linear infinite;
+		opacity: 0;
+		transition: opacity .3s ease-in-out;
+		border-radius: 30px;
+	}
+
+	.glow-on-hover:active {
+		color: #fff;
+	}
+
+	.glow-on-hover:active:after {
+		background: transparent;
+	}
+
+	.glow-on-hover:hover:before {
+		opacity: 1;
+	}
+
+	.glow-on-hover:after {
+		z-index: -1;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		left: 0;
+		top: 0;
+		border-radius: 30px;
+	}
+
+	@keyframes glowing {
+		0% { background-position: 0 0; }
+		50% { background-position: 400% 0; }
+		100% { background-position: 0 0; }
+	}
+
+
+	#Group_72938 {
+		opacity: 0.6;
+		position: absolute;
+		width: 1211.618px;
+		height: 199.706px;
+		left: 68.382px;
+		top: 956.522px;
 		overflow: visible;
+	}
+	#collaboration {
+		filter: drop-shadow(0px 6px 6px rgba(32, 113, 120, 1));
+		position: absolute;
+		width: 1211.618px;
+		height: 199.706px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_72929 {
+		position: absolute;
+		width: 614px;
+		height: 123px;
+		left: 611px;
+		top: 995.375px;
+		overflow: visible;
+	}
+	#Collaborate_with_fellow_UST_em {
+		left: 0px;
+		top: 45.888px;
+		position: absolute;
+		overflow: visible;
+		width: 615px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Join_our_community_of_develope {
+		left: 242px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 373px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+	#wireframe-button-standard {
+		position: absolute;
+		width: 186px;
+		height: 34px;
+		left: 425px;
+		top: 89px;
+		overflow: visible;
+		padding: 9px 15px 9px 16px;
+	}
+	#background {
+		fill: rgba(255,255,255,1);
+	}
+	.background {
+		position: absolute;
+		overflow: visible;
+		width: 186px;
+		height: 34px;
+		left: 0px;
+		top: 0px;
+	}
+	#Join_our_GitHub_organization {
+		left: 16px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 156px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(42,41,41,1);
+	}
+	#Path_178 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_178 {
+		overflow: visible;
+		position: absolute;
+		width: 1280.823px;
+		height: 747.467px;
+		left: 0px;
+		top: 2216.435px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Path_177 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Path_177 {
+		overflow: visible;
+		position: absolute;
+		width: 1280.823px;
+		height: 610.91px;
+		left: -0.823px;
+		top: 1251.763px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_72935 {
+		position: absolute;
+		width: 1211.618px;
+		height: 199.706px;
+		left: 0px;
+		top: 124.968px;
+		overflow: visible;
+	}
+	#AdobeStock_479294594 {
+		opacity: 0.754;
+		filter: drop-shadow(0px 6px 6px rgba(32, 113, 120, 1));
+		position: absolute;
+		width: 1211.618px;
+		height: 199.706px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#A_vast_catalog_of_high-quality {
+		left: 48.67px;
+		top: 83.318px;
+		position: absolute;
+		overflow: visible;
+		width: 637px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#Welcome_to_UST_PACE_Solution_H {
+		opacity: 0.802;
+		left: 48.67px;
+		top: 37.482px;
+		position: absolute;
+		overflow: visible;
+		width: 393px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+	#wireframe-button-standard_x {
+		position: absolute;
+		width: 107px;
+		height: 34px;
+		left: 48.67px;
+		top: 128.027px;
+		overflow: visible;
+		padding: 9px 15px 9px 16px;
+	}
+	#background_y {
+		fill: rgba(255,255,255,1);
+	}
+	.background_y {
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		height: 34px;
+		left: 0px;
+		top: 0px;
+	}
+	#Explore_assets {
+		left: 16px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(42,41,41,1);
+	}
+	#wireframe-button-standard_ {
+		position: absolute;
+		width: 200px;
+		height: 34px;
+		left: 178px;
+		top: 128.027px;
+		overflow: visible;
+		padding: 9px 15px 9px 16px;
+	}
+	#background_ {
+		fill: rgba(255,255,255,1);
+	}
+	.background_ {
+		position: absolute;
+		overflow: visible;
+		width: 200px;
+		height: 34px;
+		left: 0px;
+		top: 0px;
+	}
+	#Learn_more_about_Solution_Hub {
+		left: 16px;
+		top: 9px;
+		position: absolute;
+		overflow: visible;
+		width: 170px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(42,41,41,1);
 	}
 	#Group_72927 {
 		position: absolute;
-		width: 932.668px;
-		height: 227.45px;
-		left: 493.666px;
-		top: 478.234px;
+		width: 772.895px;
+		height: 215.062px;
+		left: 273.105px;
+		top: 381.571px;
 		overflow: visible;
 	}
 	#Popular_Categories {
 		opacity: 0.802;
-		left: 318.877px;
+		left: 218.282px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
@@ -73,8 +366,8 @@
 		position: absolute;
 		width: 68.126px;
 		height: 77.858px;
-		left: 85.937px;
-		top: 89.339px;
+		left: 218.282px;
+		top: 87.371px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Icon_ionic-ios-infinite {
@@ -83,10 +376,10 @@
 	.Icon_ionic-ios-infinite {
 		overflow: visible;
 		position: absolute;
-		width: 119.581px;
-		height: 53.654px;
-		left: 301.447px;
-		top: 113.543px;
+		width: 103.263px;
+		height: 45.475px;
+		left: 0px;
+		top: 119.754px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Icon_awesome-database {
@@ -97,8 +390,8 @@
 		position: absolute;
 		width: 68.126px;
 		height: 77.858px;
-		left: 572.253px;
-		top: 91.961px;
+		left: 458.156px;
+		top: 87.371px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Icon_awesome-tools {
@@ -109,77 +402,85 @@
 		position: absolute;
 		width: 71.106px;
 		height: 71.109px;
-		left: 819.671px;
-		top: 98.71px;
+		left: 663.509px;
+		top: 94.119px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Infrastructure_Software {
 		opacity: 0.804;
-		left: 0px;
-		top: 193.373px;
+		left: 146.895px;
+		top: 185.062px;
 		position: absolute;
 		overflow: visible;
-		width: 241px;
+		width: 221px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
+		font-size: 22px;
 		color: rgba(255,255,255,1);
 	}
 	#DevOps {
 		opacity: 0.804;
-		left: 316.15px;
-		top: 194.45px;
+		left: 11.632px;
+		top: 185.062px;
 		position: absolute;
 		overflow: visible;
-		width: 89px;
+		width: 81px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
+		font-size: 22px;
 		color: rgba(255,255,255,1);
 	}
 	#Data_Management {
 		opacity: 0.804;
-		left: 505.905px;
-		top: 194.45px;
+		left: 400.219px;
+		top: 185.062px;
 		position: absolute;
 		overflow: visible;
-		width: 201px;
+		width: 185px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
+		font-size: 22px;
 		color: rgba(255,255,255,1);
 	}
 	#Developer_Kits {
 		opacity: 0.804;
-		left: 774.668px;
-		top: 193.373px;
+		left: 628.895px;
+		top: 185.062px;
 		position: absolute;
 		overflow: visible;
-		width: 159px;
+		width: 145px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
+		font-size: 22px;
 		color: rgba(255,255,255,1);
 	}
-	#Most_Popular_Products {
+	#Group_72928 {
+		position: absolute;
+		width: 674.929px;
+		height: 211.84px;
+		left: 302.535px;
+		top: 674.158px;
+		overflow: visible;
+	}
+	#Cloud_Products {
 		opacity: 0.802;
-		left: 778px;
-		top: 1505px;
+		left: 213.465px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 365px;
+		width: 249px;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Avenir;
@@ -188,273 +489,141 @@
 		font-size: 36px;
 		color: rgba(255,255,255,1);
 	}
-	#Rectangle_145786 {
-		opacity: 0.995;
-		fill: rgba(255,255,255,1);
-		stroke: rgba(230,230,230,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
+	#Icon_awesome-aws {
+		fill: rgba(255,171,108,1);
 	}
-	.Rectangle_145786 {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
+	.Icon_awesome-aws {
+		filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
 		overflow: visible;
-		width: 249px;
-		height: 325px;
-		left: 287px;
-		top: 1599px;
-	}
-	#Alpine_Base_Image_315 {
-		opacity: 0.9;
-		left: 307px;
-		top: 1690px;
 		position: absolute;
-		overflow: visible;
-		width: 157px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(0,0,0,1);
+		width: 106.378px;
+		height: 72.084px;
+		left: 36.938px;
+		top: 78.134px;
+		transform: matrix(1,0,0,1,0,0);
 	}
-	#A_security-hardened_Alpine_ima {
-		left: 307px;
-		top: 1717px;
+	#Icon_simple-microsoftazure {
+		fill: rgba(60,146,222,1);
+	}
+	.Icon_simple-microsoftazure {
+		filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
+		overflow: visible;
 		position: absolute;
-		overflow: visible;
-		width: 192.637px;
-		height: 80.9500732421875px;
-		line-height: 21px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(100,100,100,1);
-		letter-spacing: 0.11px;
+		width: 96.981px;
+		height: 80.21px;
+		left: 298.025px;
+		top: 70.007px;
+		transform: matrix(1,0,0,1,0,0);
 	}
-	#alpine {
-		filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		width: 57px;
-		height: 56px;
-		left: 307px;
-		top: 1626px;
-		overflow: visible;
-	}
-	#Rectangle_145789 {
-		opacity: 0.995;
-		fill: rgba(255,255,255,1);
-		stroke: rgba(230,230,230,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_145789 {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		overflow: visible;
-		width: 248px;
-		height: 325px;
-		left: 566px;
-		top: 1599px;
-	}
-	#GitLab_CI_Maven {
-		opacity: 0.9;
-		left: 589px;
-		top: 1687px;
-		position: absolute;
-		overflow: visible;
-		width: 112px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(0,0,0,1);
-	}
-	#DevSecOps_enabled_CI_Gitlab_pi {
-		left: 588px;
-		top: 1717px;
-		position: absolute;
-		overflow: visible;
-		width: 181px;
-		height: 136.2666015625px;
-		line-height: 21px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(100,100,100,1);
-		letter-spacing: 0.11px;
-	}
-	#gitlab {
-		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		width: 66.379px;
-		height: 63.268px;
-		left: 588px;
-		top: 1620px;
-		overflow: visible;
-	}
-	#Rectangle_145793 {
-		opacity: 0.995;
-		fill: rgba(255,255,255,1);
-		stroke: rgba(230,230,230,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_145793 {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		overflow: visible;
-		width: 247px;
-		height: 325px;
-		left: 844px;
-		top: 1599px;
-	}
-	#Nodejs_Base_Image {
-		opacity: 0.9;
-		left: 863px;
-		top: 1690px;
-		position: absolute;
-		overflow: visible;
-		width: 132px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(0,0,0,1);
-	}
-	#A_security_hardened_Nodejs_ima {
-		left: 863.5px;
-		top: 1717px;
-		position: absolute;
-		overflow: visible;
-		width: 188px;
-		height: 80.9500732421875px;
-		line-height: 21px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(100,100,100,1);
-		letter-spacing: 0.11px;
-	}
-	#Rectangle_145794 {
+	#Icon_awesome-cloud {
 		fill: rgba(234,234,234,1);
 	}
-	.Rectangle_145794 {
+	.Icon_awesome-cloud {
+		filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 103.299px;
+		height: 80.211px;
+		left: 549.715px;
+		top: 70px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#AWS {
+		opacity: 0.804;
+		left: 62px;
+		top: 155px;
 		position: absolute;
 		overflow: visible;
-		width: 191px;
-		height: 0px;
-		left: 863px;
-		top: 1837px;
-	}
-	#Rectangle_145797 {
-		opacity: 0.995;
-		fill: rgba(255,255,255,1);
-		stroke: rgba(230,230,230,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_145797 {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		overflow: visible;
-		width: 248px;
-		height: 325px;
-		left: 1124px;
-		top: 1599px;
-	}
-	#Web_Server_Manager {
-		opacity: 0.9;
-		left: 1144px;
-		top: 1690px;
-		position: absolute;
-		overflow: visible;
-		width: 142px;
+		width: 53px;
 		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -4px;
-		text-align: left;
+		text-align: center;
 		font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
-		color: rgba(0,0,0,1);
+		font-size: 24px;
+		color: rgba(255,255,255,1);
 	}
-	#A_web_server_tool_for_informat {
-		left: 1143px;
-		top: 1717px;
+	#Azure {
+		opacity: 0.804;
+		left: 314px;
+		top: 155px;
 		position: absolute;
 		overflow: visible;
-		width: 192px;
-		height: 140.2665557861328px;
-		line-height: 21px;
-		margin-top: -3.5px;
-		text-align: left;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
 		font-family: Avenir;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 14px;
-		color: rgba(100,100,100,1);
-		letter-spacing: 0.11px;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
 	}
-	#Rectangle_145798 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145798 {
+	#GCP {
+		opacity: 0.804;
+		left: 572px;
+		top: 158px;
 		position: absolute;
 		overflow: visible;
-		width: 191px;
-		height: 0px;
-		left: 1143px;
-		top: 1837px;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
 	}
-	#node-js {
-		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
+	#Amazon_Web_Services {
+		opacity: 0.698;
+		left: 8px;
+		top: 189.84px;
 		position: absolute;
-		width: 78px;
-		height: 72px;
-		left: 863px;
-		top: 1613px;
 		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
 	}
-	#java {
-		mix-blend-mode: luminosity;
-		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
+	#Microsoft_Azure {
+		opacity: 0.698;
+		left: 288px;
+		top: 189.84px;
 		position: absolute;
-		width: 70px;
-		height: 69px;
-		left: 1135px;
-		top: 1618px;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Google_Cloud_Platform {
+		opacity: 0.698;
+		left: 516px;
+		top: 191px;
+		position: absolute;
+		overflow: visible;
+		width: 167px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_72937 {
+		position: absolute;
+		width: 1163px;
+		height: 1851px;
+		left: 59px;
+		top: 1802px;
 		overflow: visible;
 	}
 	#Rectangle_145799 {
@@ -472,14 +641,14 @@
 		overflow: visible;
 		width: 282px;
 		height: 323px;
-		left: 379px;
-		top: 2085px;
+		left: 0px;
+		top: 107px;
 	}
 	#Technical_Documentation {
 		opacity: 0.698;
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		left: 404px;
-		top: 2115px;
+		left: 25px;
+		top: 137px;
 		position: absolute;
 		overflow: visible;
 		width: 212px;
@@ -496,14 +665,14 @@
 		position: absolute;
 		width: 264px;
 		height: 128px;
-		left: 379px;
-		top: 2262px;
+		left: 0px;
+		top: 284px;
 		overflow: visible;
 	}
 	#Access_clear_detailed_and_conc {
 		opacity: 0.8;
-		left: 404px;
-		top: 2148px;
+		left: 25px;
+		top: 170px;
 		position: absolute;
 		overflow: visible;
 		width: 169px;
@@ -532,14 +701,14 @@
 		overflow: visible;
 		width: 282px;
 		height: 323px;
-		left: 678px;
-		top: 2085px;
+		left: 299px;
+		top: 107px;
 	}
 	#Use_Cases {
 		opacity: 0.698;
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		left: 703px;
-		top: 2115px;
+		left: 324px;
+		top: 137px;
 		position: absolute;
 		overflow: visible;
 		width: 87px;
@@ -556,14 +725,14 @@
 		position: absolute;
 		width: 264px;
 		height: 128px;
-		left: 678px;
-		top: 2262px;
+		left: 299px;
+		top: 284px;
 		overflow: visible;
 	}
 	#Explore_use_cases_to_see_how_M {
 		opacity: 0.8;
-		left: 703px;
-		top: 2148px;
+		left: 324px;
+		top: 170px;
 		position: absolute;
 		overflow: visible;
 		width: 154px;
@@ -592,14 +761,14 @@
 		overflow: visible;
 		width: 282px;
 		height: 323px;
-		left: 978px;
-		top: 2085px;
+		left: 599px;
+		top: 107px;
 	}
 	#Backlogs {
 		opacity: 0.698;
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		left: 1003px;
-		top: 2115px;
+		left: 624px;
+		top: 137px;
 		position: absolute;
 		overflow: visible;
 		width: 76px;
@@ -616,14 +785,14 @@
 		position: absolute;
 		width: 264px;
 		height: 128px;
-		left: 978px;
-		top: 2262px;
+		left: 599px;
+		top: 284px;
 		overflow: visible;
 	}
 	#Browse_through_backlogs__to_fi {
 		opacity: 0.8;
-		left: 1003px;
-		top: 2148px;
+		left: 624px;
+		top: 170px;
 		position: absolute;
 		overflow: visible;
 		width: 163px;
@@ -652,14 +821,14 @@
 		overflow: visible;
 		width: 282px;
 		height: 323px;
-		left: 1278px;
-		top: 2085px;
+		left: 899px;
+		top: 107px;
 	}
 	#Discussion_Boards {
 		opacity: 0.698;
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		left: 1303px;
-		top: 2115px;
+		left: 924px;
+		top: 137px;
 		position: absolute;
 		overflow: visible;
 		width: 154px;
@@ -676,14 +845,14 @@
 		position: absolute;
 		width: 264px;
 		height: 128px;
-		left: 1278px;
-		top: 2262px;
+		left: 899px;
+		top: 284px;
 		overflow: visible;
 	}
 	#Observe_and_participate__in_di {
 		opacity: 0.8;
-		left: 1303px;
-		top: 2148px;
+		left: 924px;
+		top: 170px;
 		position: absolute;
 		overflow: visible;
 		width: 156px;
@@ -699,8 +868,8 @@
 	}
 	#Community {
 		opacity: 0.802;
-		left: 867px;
-		top: 1991px;
+		left: 488px;
+		top: 0px;
 		position: absolute;
 		overflow: visible;
 		width: 187px;
@@ -712,77 +881,6 @@
 		font-size: 36px;
 		color: rgba(255,255,255,1);
 	}
-	#Rectangle_145795 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(230,230,230,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_145795 {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		overflow: visible;
-		width: 248px;
-		height: 325px;
-		left: 1404px;
-		top: 1599px;
-	}
-	#Jenkins_CI_Maven {
-		opacity: 0.9;
-		left: 1424px;
-		top: 1690px;
-		position: absolute;
-		overflow: visible;
-		width: 117px;
-		white-space: nowrap;
-		line-height: 22px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(0,0,0,1);
-	}
-	#DevSecOps_enabled_CI_Jenkins_p {
-		left: 1424px;
-		top: 1717px;
-		position: absolute;
-		overflow: visible;
-		width: 191px;
-		height: 125.6412124633789px;
-		line-height: 21px;
-		margin-top: -3.5px;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(110,110,110,1);
-	}
-	#Rectangle_145796 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145796 {
-		position: absolute;
-		overflow: visible;
-		width: 192px;
-		height: 0px;
-		left: 1422px;
-		top: 1837px;
-	}
-	#jenkins {
-		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		width: 74px;
-		height: 71px;
-		left: 1415px;
-		top: 1620px;
-		overflow: visible;
-	}
 	#Rectangle_145517 {
 		fill: rgba(255,255,255,1);
 		stroke: rgba(230,230,230,1);
@@ -793,16 +891,17 @@
 		shape-rendering: auto;
 	}
 	.Rectangle_145517 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
 		position: absolute;
 		overflow: visible;
-		width: 360px;
-		height: 104px;
-		left: 581px;
-		top: 2579px;
+		width: 378px;
+		height: 122px;
+		left: 202px;
+		top: 601px;
 	}
 	#Talk_about_ideas_for_new_featu {
-		left: 701px;
-		top: 2619px;
+		left: 322px;
+		top: 641px;
 		position: absolute;
 		overflow: visible;
 		width: 225px;
@@ -824,8 +923,8 @@
 		overflow: visible;
 		width: 1px;
 		height: 103px;
-		left: 684px;
-		top: 2580px;
+		left: 305px;
+		top: 602px;
 	}
 	#Rectangle_145899 {
 		fill: rgba(255,255,255,1);
@@ -842,12 +941,12 @@
 		overflow: visible;
 		width: 378px;
 		height: 144px;
-		left: 581px;
-		top: 2697px;
+		left: 202px;
+		top: 719px;
 	}
 	#Share_your_thoughts_about_an_a {
-		left: 701px;
-		top: 2737px;
+		left: 322px;
+		top: 759px;
 		position: absolute;
 		overflow: visible;
 		width: 225px;
@@ -869,15 +968,15 @@
 		overflow: visible;
 		width: 1px;
 		height: 125px;
-		left: 684px;
-		top: 2698px;
+		left: 305px;
+		top: 720px;
 	}
 	#Group_72890 {
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		left: 902px;
-		top: 2704px;
+		left: 523px;
+		top: 726px;
 		overflow: visible;
 	}
 	#Action_button {
@@ -900,10 +999,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background {
+	#Background_cf {
 		fill: rgba(255,0,0,0);
 	}
-	.Background {
+	.Background_cf {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -991,8 +1090,8 @@
 		top: 7.1px;
 	}
 	#Suggestions_or_concerns {
-		left: 701px;
-		top: 2712px;
+		left: 322px;
+		top: 734px;
 		position: absolute;
 		overflow: visible;
 		width: 171px;
@@ -1019,12 +1118,12 @@
 		overflow: visible;
 		width: 378px;
 		height: 122px;
-		left: 979px;
-		top: 2578px;
+		left: 600px;
+		top: 600px;
 	}
 	#Follow_Discussions {
-		left: 1098.987px;
-		top: 2593px;
+		left: 719.987px;
+		top: 615px;
 		position: absolute;
 		overflow: visible;
 		width: 129px;
@@ -1037,8 +1136,8 @@
 		color: rgba(0,0,0,1);
 	}
 	#Find_a_discussion_that_interes {
-		left: 1099px;
-		top: 2618px;
+		left: 720px;
+		top: 640px;
 		position: absolute;
 		overflow: visible;
 		width: 225px;
@@ -1060,8 +1159,8 @@
 		overflow: visible;
 		width: 1px;
 		height: 103px;
-		left: 1082px;
-		top: 2579px;
+		left: 703px;
+		top: 601px;
 	}
 	#Rectangle_145905 {
 		fill: rgba(255,255,255,1);
@@ -1078,12 +1177,12 @@
 		overflow: visible;
 		width: 378px;
 		height: 144px;
-		left: 979px;
-		top: 2697px;
+		left: 600px;
+		top: 719px;
 	}
 	#Create_backlog_items {
-		left: 1099px;
-		top: 2711.5px;
+		left: 720px;
+		top: 733.5px;
 		position: absolute;
 		overflow: visible;
 		width: 146px;
@@ -1096,8 +1195,8 @@
 		color: rgba(0,0,0,1);
 	}
 	#Turn_a_discussion_into_a_backl {
-		left: 1099px;
-		top: 2737px;
+		left: 720px;
+		top: 759px;
 		position: absolute;
 		overflow: visible;
 		width: 225px;
@@ -1119,18 +1218,18 @@
 		overflow: visible;
 		width: 1px;
 		height: 125px;
-		left: 1082px;
-		top: 2698px;
+		left: 703px;
+		top: 720px;
 	}
 	#Group_72892 {
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		left: 1299px;
-		top: 2705px;
+		left: 920px;
+		top: 727px;
 		overflow: visible;
 	}
-	#Action_button_cp {
+	#Action_button_cx {
 		position: absolute;
 		width: 32px;
 		height: 32px;
@@ -1138,11 +1237,11 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Placement_Area_cq {
+	#Placement_Area_cy {
 		opacity: 0;
 		fill: rgba(255,0,0,1);
 	}
-	.Placement_Area_cq {
+	.Placement_Area_cy {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1150,157 +1249,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background_cr {
+	#Background_cz {
 		fill: rgba(255,0,0,0);
 	}
-	.Background_cr {
-		position: absolute;
-		overflow: visible;
-		width: 32px;
-		height: 32px;
-		left: 0px;
-		top: 0px;
-	}
-	#Cursor_Area_cs {
-		opacity: 0.3;
-		fill: rgba(255,102,255,1);
-	}
-	.Cursor_Area_cs {
-		display: none;
-		position: absolute;
-		overflow: visible;
-		width: 32px;
-		height: 32px;
-		left: 0px;
-		top: 0px;
-	}
-	#Touch_Area_ct {
-		opacity: 0.1;
-		fill: rgba(255,0,255,1);
-	}
-	.Touch_Area_ct {
-		display: none;
-		position: absolute;
-		overflow: visible;
-		width: 40px;
-		height: 48px;
-		left: -4px;
-		top: -8px;
-	}
-	#Group_72883_cu {
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		left: 7px;
-		top: 7px;
-		overflow: visible;
-	}
-	#ToDelete_cv {
-		opacity: 0;
-		fill: rgba(255,19,220,1);
-	}
-	.ToDelete_cv {
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		left: 0px;
-		top: 0px;
-	}
-	#Ellipse_9344_cw {
-		fill: rgba(70,70,70,1);
-	}
-	.Ellipse_9344_cw {
-		position: absolute;
-		overflow: visible;
-		width: 3.8px;
-		height: 3.8px;
-		left: 7.1px;
-		top: 7.1px;
-	}
-	#Ellipse_9345_cx {
-		fill: rgba(70,70,70,1);
-	}
-	.Ellipse_9345_cx {
-		position: absolute;
-		overflow: visible;
-		width: 3.8px;
-		height: 3.8px;
-		left: 13.1px;
-		top: 7.1px;
-	}
-	#Ellipse_9346_cy {
-		fill: rgba(70,70,70,1);
-	}
-	.Ellipse_9346_cy {
-		position: absolute;
-		overflow: visible;
-		width: 3.8px;
-		height: 3.8px;
-		left: 1.1px;
-		top: 7.1px;
-	}
-	#Rectangle_145908 {
-		fill: rgba(255,255,255,1);
-		stroke: rgba(221,221,221,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Rectangle_145908 {
-		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-		position: absolute;
-		overflow: visible;
-		width: 378px;
-		height: 122px;
-		left: 582px;
-		top: 2840px;
-	}
-	#Rectangle_145910 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145910 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 103px;
-		left: 685px;
-		top: 2841px;
-	}
-	#Group_72893 {
-		position: absolute;
-		width: 32px;
-		height: 32px;
-		left: 902px;
-		top: 2848px;
-		overflow: visible;
-	}
-	#Action_button_c {
-		position: absolute;
-		width: 32px;
-		height: 32px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Placement_Area_c {
-		opacity: 0;
-		fill: rgba(255,0,0,1);
-	}
-	.Placement_Area_c {
-		position: absolute;
-		overflow: visible;
-		width: 32px;
-		height: 32px;
-		left: 0px;
-		top: 0px;
-	}
-	#Background_c {
-		fill: rgba(255,0,0,0);
-	}
-	.Background_c {
+	.Background_cz {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1365,10 +1317,10 @@
 		left: 7.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9345_da {
+	#Ellipse_9345_c {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9345_da {
+	.Ellipse_9345_c {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1376,10 +1328,157 @@
 		left: 13.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9346_db {
+	#Ellipse_9346_c {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9346_db {
+	.Ellipse_9346_c {
+		position: absolute;
+		overflow: visible;
+		width: 3.8px;
+		height: 3.8px;
+		left: 1.1px;
+		top: 7.1px;
+	}
+	#Rectangle_145908 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_145908 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 378px;
+		height: 122px;
+		left: 203px;
+		top: 862px;
+	}
+	#Rectangle_145910 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145910 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 103px;
+		left: 306px;
+		top: 863px;
+	}
+	#Group_72893 {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 523px;
+		top: 870px;
+		overflow: visible;
+	}
+	#Action_button_da {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Placement_Area_db {
+		opacity: 0;
+		fill: rgba(255,0,0,1);
+	}
+	.Placement_Area_db {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#Background_dc {
+		fill: rgba(255,0,0,0);
+	}
+	.Background_dc {
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#Cursor_Area_dd {
+		opacity: 0.3;
+		fill: rgba(255,102,255,1);
+	}
+	.Cursor_Area_dd {
+		display: none;
+		position: absolute;
+		overflow: visible;
+		width: 32px;
+		height: 32px;
+		left: 0px;
+		top: 0px;
+	}
+	#Touch_Area_de {
+		opacity: 0.1;
+		fill: rgba(255,0,255,1);
+	}
+	.Touch_Area_de {
+		display: none;
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		height: 48px;
+		left: -4px;
+		top: -8px;
+	}
+	#Group_72883_df {
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: 7px;
+		top: 7px;
+		overflow: visible;
+	}
+	#ToDelete_dg {
+		opacity: 0;
+		fill: rgba(255,19,220,1);
+	}
+	.ToDelete_dg {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 18px;
+		left: 0px;
+		top: 0px;
+	}
+	#Ellipse_9344_dh {
+		fill: rgba(70,70,70,1);
+	}
+	.Ellipse_9344_dh {
+		position: absolute;
+		overflow: visible;
+		width: 3.8px;
+		height: 3.8px;
+		left: 7.1px;
+		top: 7.1px;
+	}
+	#Ellipse_9345_di {
+		fill: rgba(70,70,70,1);
+	}
+	.Ellipse_9345_di {
+		position: absolute;
+		overflow: visible;
+		width: 3.8px;
+		height: 3.8px;
+		left: 13.1px;
+		top: 7.1px;
+	}
+	#Ellipse_9346_dj {
+		fill: rgba(70,70,70,1);
+	}
+	.Ellipse_9346_dj {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1388,8 +1487,8 @@
 		top: 7.1px;
 	}
 	#Share_your_ideas {
-		left: 701px;
-		top: 2594px;
+		left: 322px;
+		top: 616px;
 		position: absolute;
 		overflow: visible;
 		width: 115px;
@@ -1409,12 +1508,12 @@
 		overflow: visible;
 		width: 1px;
 		height: 103px;
-		left: 684px;
-		top: 2580px;
+		left: 305px;
+		top: 602px;
 	}
 	#Initiate_a_repository {
-		left: 702px;
-		top: 2855.5px;
+		left: 323px;
+		top: 877.5px;
 		position: absolute;
 		overflow: visible;
 		width: 135px;
@@ -1427,8 +1526,8 @@
 		color: rgba(0,0,0,1);
 	}
 	#Create_a_repository_for_an_uni {
-		left: 701px;
-		top: 2881px;
+		left: 322px;
+		top: 903px;
 		position: absolute;
 		overflow: visible;
 		width: 225px;
@@ -1457,8 +1556,8 @@
 		overflow: visible;
 		width: 378px;
 		height: 122px;
-		left: 979px;
-		top: 2839px;
+		left: 600px;
+		top: 861px;
 	}
 	#Rectangle_145916 {
 		fill: rgba(234,234,234,1);
@@ -1468,18 +1567,18 @@
 		overflow: visible;
 		width: 1px;
 		height: 103px;
-		left: 1082px;
-		top: 2840px;
+		left: 703px;
+		top: 862px;
 	}
 	#Group_72895 {
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		left: 1299px;
-		top: 2847px;
+		left: 920px;
+		top: 869px;
 		overflow: visible;
 	}
-	#Action_button_dj {
+	#Action_button_dr {
 		position: absolute;
 		width: 32px;
 		height: 32px;
@@ -1487,11 +1586,11 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Placement_Area_dk {
+	#Placement_Area_ds {
 		opacity: 0;
 		fill: rgba(255,0,0,1);
 	}
-	.Placement_Area_dk {
+	.Placement_Area_ds {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1499,10 +1598,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background_dl {
+	#Background_dt {
 		fill: rgba(255,0,0,0);
 	}
-	.Background_dl {
+	.Background_dt {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1510,11 +1609,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Cursor_Area_dm {
+	#Cursor_Area_du {
 		opacity: 0.3;
 		fill: rgba(255,102,255,1);
 	}
-	.Cursor_Area_dm {
+	.Cursor_Area_du {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -1523,11 +1622,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Touch_Area_dn {
+	#Touch_Area_dv {
 		opacity: 0.1;
 		fill: rgba(255,0,255,1);
 	}
-	.Touch_Area_dn {
+	.Touch_Area_dv {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -1536,7 +1635,7 @@
 		left: -4px;
 		top: -8px;
 	}
-	#Group_72883_do {
+	#Group_72883_dw {
 		position: absolute;
 		width: 18px;
 		height: 18px;
@@ -1544,11 +1643,11 @@
 		top: 7px;
 		overflow: visible;
 	}
-	#ToDelete_dp {
+	#ToDelete_dx {
 		opacity: 0;
 		fill: rgba(255,19,220,1);
 	}
-	.ToDelete_dp {
+	.ToDelete_dx {
 		position: absolute;
 		overflow: visible;
 		width: 18px;
@@ -1556,10 +1655,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Ellipse_9344_dq {
+	#Ellipse_9344_dy {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9344_dq {
+	.Ellipse_9344_dy {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1567,10 +1666,10 @@
 		left: 7.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9345_dr {
+	#Ellipse_9345_dz {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9345_dr {
+	.Ellipse_9345_dz {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1578,10 +1677,10 @@
 		left: 13.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9346_ds {
+	#Ellipse_9346_d {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9346_ds {
+	.Ellipse_9346_d {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1590,8 +1689,8 @@
 		top: 7.1px;
 	}
 	#Contribute_to_a_repository {
-		left: 1099px;
-		top: 2854.5px;
+		left: 720px;
+		top: 876.5px;
 		position: absolute;
 		overflow: visible;
 		width: 179px;
@@ -1604,8 +1703,8 @@
 		color: rgba(0,0,0,1);
 	}
 	#Write_code_Discuss_repository- {
-		left: 1099px;
-		top: 2880px;
+		left: 720px;
+		top: 902px;
 		position: absolute;
 		overflow: visible;
 		width: 225px;
@@ -1623,11 +1722,11 @@
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		left: 902px;
-		top: 2586px;
+		left: 523px;
+		top: 608px;
 		overflow: visible;
 	}
-	#Action_button_dw {
+	#Action_button_d {
 		position: absolute;
 		width: 32px;
 		height: 32px;
@@ -1635,11 +1734,11 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Placement_Area_dx {
+	#Placement_Area_d {
 		opacity: 0;
 		fill: rgba(255,0,0,1);
 	}
-	.Placement_Area_dx {
+	.Placement_Area_d {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1647,10 +1746,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background_dy {
+	#Background_d {
 		fill: rgba(255,0,0,0);
 	}
-	.Background_dy {
+	.Background_d {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1658,11 +1757,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Cursor_Area_dz {
+	#Cursor_Area_d {
 		opacity: 0.3;
 		fill: rgba(255,102,255,1);
 	}
-	.Cursor_Area_dz {
+	.Cursor_Area_d {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -1692,11 +1791,11 @@
 		top: 7px;
 		overflow: visible;
 	}
-	#ToDelete_d {
+	#ToDelete_ea {
 		opacity: 0;
 		fill: rgba(255,19,220,1);
 	}
-	.ToDelete_d {
+	.ToDelete_ea {
 		position: absolute;
 		overflow: visible;
 		width: 18px;
@@ -1704,10 +1803,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Ellipse_9344_d {
+	#Ellipse_9344_eb {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9344_d {
+	.Ellipse_9344_eb {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1715,10 +1814,10 @@
 		left: 7.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9345_d {
+	#Ellipse_9345_ec {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9345_d {
+	.Ellipse_9345_ec {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1726,10 +1825,10 @@
 		left: 13.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9346_d {
+	#Ellipse_9346_ed {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9346_d {
+	.Ellipse_9346_ed {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1741,59 +1840,59 @@
 		position: absolute;
 		width: 102px;
 		height: 102px;
-		left: 582px;
-		top: 2580px;
+		left: 203px;
+		top: 602px;
 		overflow: visible;
 	}
 	#suggestions {
 		position: absolute;
 		width: 102px;
 		height: 126px;
-		left: 581px;
-		top: 2697px;
+		left: 202px;
+		top: 719px;
 		overflow: visible;
 	}
 	#follow {
 		position: absolute;
 		width: 104px;
 		height: 105px;
-		left: 979px;
-		top: 2578px;
+		left: 600px;
+		top: 600px;
 		overflow: visible;
 	}
 	#repository {
 		position: absolute;
 		width: 102px;
 		height: 103px;
-		left: 582px;
-		top: 2841px;
+		left: 203px;
+		top: 863px;
 		overflow: visible;
 	}
 	#kanban {
 		position: absolute;
 		width: 104px;
 		height: 126px;
-		left: 979px;
-		top: 2697px;
+		left: 601px;
+		top: 719px;
 		overflow: visible;
 	}
 	#code {
 		position: absolute;
 		width: 103px;
 		height: 104px;
-		left: 979px;
-		top: 2839px;
+		left: 600px;
+		top: 861px;
 		overflow: visible;
 	}
 	#Group_72891 {
 		position: absolute;
 		width: 32px;
 		height: 32px;
-		left: 1299px;
-		top: 2586px;
+		left: 920px;
+		top: 608px;
 		overflow: visible;
 	}
-	#Action_button_ed {
+	#Action_button_el {
 		position: absolute;
 		width: 32px;
 		height: 32px;
@@ -1801,11 +1900,11 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Placement_Area_ee {
+	#Placement_Area_em {
 		opacity: 0;
 		fill: rgba(255,0,0,1);
 	}
-	.Placement_Area_ee {
+	.Placement_Area_em {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1813,10 +1912,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background_ef {
+	#Background_en {
 		fill: rgba(255,0,0,0);
 	}
-	.Background_ef {
+	.Background_en {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -1824,11 +1923,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Cursor_Area_eg {
+	#Cursor_Area_eo {
 		opacity: 0.3;
 		fill: rgba(255,102,255,1);
 	}
-	.Cursor_Area_eg {
+	.Cursor_Area_eo {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -1837,11 +1936,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Touch_Area_eh {
+	#Touch_Area_ep {
 		opacity: 0.1;
 		fill: rgba(255,0,255,1);
 	}
-	.Touch_Area_eh {
+	.Touch_Area_ep {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -1850,7 +1949,7 @@
 		left: -4px;
 		top: -8px;
 	}
-	#Group_72883_ei {
+	#Group_72883_eq {
 		position: absolute;
 		width: 18px;
 		height: 18px;
@@ -1858,11 +1957,11 @@
 		top: 7px;
 		overflow: visible;
 	}
-	#ToDelete_ej {
+	#ToDelete_er {
 		opacity: 0;
 		fill: rgba(255,19,220,1);
 	}
-	.ToDelete_ej {
+	.ToDelete_er {
 		position: absolute;
 		overflow: visible;
 		width: 18px;
@@ -1870,10 +1969,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Ellipse_9344_ek {
+	#Ellipse_9344_es {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9344_ek {
+	.Ellipse_9344_es {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1881,10 +1980,10 @@
 		left: 7.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9345_el {
+	#Ellipse_9345_et {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9345_el {
+	.Ellipse_9345_et {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1892,10 +1991,10 @@
 		left: 13.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9346_em {
+	#Ellipse_9346_eu {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9346_em {
+	.Ellipse_9346_eu {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -1905,8 +2004,8 @@
 	}
 	#How_can_I_contribute {
 		opacity: 0.802;
-		left: 784px;
-		top: 2479px;
+		left: 405px;
+		top: 528px;
 		position: absolute;
 		overflow: visible;
 		width: 353px;
@@ -1916,14 +2015,14 @@
 		font-style: normal;
 		font-weight: normal;
 		font-size: 36px;
-		color: rgba(255,255,255,1);
+		color: rgba(7,7,7,1);
 	}
 	#Group_72930 {
 		position: absolute;
 		width: 654px;
-		height: 781px;
-		left: 633px;
-		top: 3058px;
+		height: 772px;
+		left: 254px;
+		top: 1079px;
 		overflow: visible;
 	}
 	#Ellipse_8 {
@@ -1942,7 +2041,7 @@
 		width: 74px;
 		height: 75px;
 		left: 107px;
-		top: 89px;
+		top: 80px;
 	}
 	#Ellipse_9 {
 		fill: rgba(42,41,41,1);
@@ -1960,11 +2059,11 @@
 		width: 74px;
 		height: 75px;
 		left: 486px;
-		top: 89px;
+		top: 80px;
 	}
 	#n_ {
 		left: 126px;
-		top: 95px;
+		top: 86px;
 		position: absolute;
 		overflow: visible;
 		width: 19px;
@@ -1976,9 +2075,9 @@
 		font-size: 32px;
 		color: rgba(255,255,255,1);
 	}
-	#n__es {
+	#n__e {
 		left: 505px;
-		top: 95px;
+		top: 86px;
 		position: absolute;
 		overflow: visible;
 		width: 19px;
@@ -2006,11 +2105,11 @@
 		width: 298px;
 		height: 352px;
 		left: 0px;
-		top: 186px;
+		top: 177px;
 	}
 	#Set_Up_Your_GitHub_Account {
 		left: 24px;
-		top: 348px;
+		top: 339px;
 		position: absolute;
 		overflow: visible;
 		width: 190px;
@@ -2024,7 +2123,7 @@
 	}
 	#Create_a_GitHub_account_with_y {
 		left: 24px;
-		top: 374px;
+		top: 365px;
 		position: absolute;
 		overflow: visible;
 		width: 237px;
@@ -2047,7 +2146,7 @@
 		width: 278px;
 		height: 1px;
 		left: 1px;
-		top: 322px;
+		top: 313px;
 	}
 	#Rectangle_145874 {
 		fill: rgba(234,234,234,1);
@@ -2058,14 +2157,14 @@
 		width: 232px;
 		height: 1px;
 		left: 24px;
-		top: 445px;
+		top: 436px;
 	}
 	#Group_72931 {
 		position: absolute;
 		width: 124px;
 		height: 32px;
 		left: 78px;
-		top: 463px;
+		top: 454px;
 		overflow: visible;
 	}
 	#Rectangle_145875 {
@@ -2086,7 +2185,7 @@
 		top: 0px;
 	}
 	#Create_Account {
-		left: 13.5px;
+		left: 13px;
 		top: 6.5px;
 		position: absolute;
 		overflow: visible;
@@ -2104,7 +2203,7 @@
 		width: 278px;
 		height: 135px;
 		left: 1px;
-		top: 187px;
+		top: 178px;
 		overflow: visible;
 	}
 	#Group_3353 {
@@ -2112,10 +2211,10 @@
 		width: 32px;
 		height: 32px;
 		left: 232px;
-		top: 341px;
+		top: 332px;
 		overflow: visible;
 	}
-	#Action_button_e {
+	#Action_button_fb {
 		position: absolute;
 		width: 32px;
 		height: 32px;
@@ -2123,11 +2222,11 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Placement_Area_e {
+	#Placement_Area_fc {
 		opacity: 0;
 		fill: rgba(255,0,0,1);
 	}
-	.Placement_Area_e {
+	.Placement_Area_fc {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -2135,10 +2234,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background_e {
+	#Background_fd {
 		fill: rgba(255,0,0,0);
 	}
-	.Background_e {
+	.Background_fd {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -2146,11 +2245,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Cursor_Area_e {
+	#Cursor_Area_fe {
 		opacity: 0.3;
 		fill: rgba(255,102,255,1);
 	}
-	.Cursor_Area_e {
+	.Cursor_Area_fe {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -2159,11 +2258,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Touch_Area_e {
+	#Touch_Area_ff {
 		opacity: 0.1;
 		fill: rgba(255,0,255,1);
 	}
-	.Touch_Area_e {
+	.Touch_Area_ff {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -2172,7 +2271,7 @@
 		left: -4px;
 		top: -8px;
 	}
-	#Group_72883_e {
+	#Group_72883_fg {
 		position: absolute;
 		width: 18px;
 		height: 18px;
@@ -2180,11 +2279,11 @@
 		top: 7px;
 		overflow: visible;
 	}
-	#ToDelete_e {
+	#ToDelete_fh {
 		opacity: 0;
 		fill: rgba(255,19,220,1);
 	}
-	.ToDelete_e {
+	.ToDelete_fh {
 		position: absolute;
 		overflow: visible;
 		width: 18px;
@@ -2192,10 +2291,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Ellipse_9344_fa {
+	#Ellipse_9344_fi {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9344_fa {
+	.Ellipse_9344_fi {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -2203,10 +2302,10 @@
 		left: 7.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9345_fb {
+	#Ellipse_9345_fj {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9345_fb {
+	.Ellipse_9345_fj {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -2214,10 +2313,10 @@
 		left: 13.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9346_fc {
+	#Ellipse_9346_fk {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9346_fc {
+	.Ellipse_9346_fk {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -2241,11 +2340,11 @@
 		width: 298px;
 		height: 613px;
 		left: 374px;
-		top: 186px;
+		top: 177px;
 	}
-	#n__fe {
+	#n__fm {
 		left: 398.013px;
-		top: 372px;
+		top: 363px;
 		position: absolute;
 		overflow: visible;
 		width: 1px;
@@ -2268,7 +2367,7 @@
 		width: 278px;
 		height: 1px;
 		left: 375px;
-		top: 322px;
+		top: 313px;
 	}
 	#Rectangle_145884 {
 		fill: rgba(234,234,234,1);
@@ -2279,7 +2378,7 @@
 		width: 232px;
 		height: 1px;
 		left: 398px;
-		top: 706px;
+		top: 697px;
 	}
 	#Rectangle_145885 {
 		fill: transparent;
@@ -2296,11 +2395,11 @@
 		width: 124px;
 		height: 32px;
 		left: 452px;
-		top: 726px;
+		top: 717px;
 	}
 	#Send_Invite {
-		left: 480px;
-		top: 732.5px;
+		left: 477px;
+		top: 723.5px;
 		position: absolute;
 		overflow: visible;
 		width: 75px;
@@ -2317,7 +2416,7 @@
 		width: 278px;
 		height: 135px;
 		left: 375px;
-		top: 187px;
+		top: 178px;
 		overflow: visible;
 	}
 	#Group_72885 {
@@ -2325,10 +2424,10 @@
 		width: 32px;
 		height: 32px;
 		left: 606px;
-		top: 341px;
+		top: 332px;
 		overflow: visible;
 	}
-	#Action_button_fl {
+	#Action_button_ft {
 		position: absolute;
 		width: 32px;
 		height: 32px;
@@ -2336,11 +2435,11 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Placement_Area_fm {
+	#Placement_Area_fu {
 		opacity: 0;
 		fill: rgba(255,0,0,1);
 	}
-	.Placement_Area_fm {
+	.Placement_Area_fu {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -2348,10 +2447,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Background_fn {
+	#Background_fv {
 		fill: rgba(255,0,0,0);
 	}
-	.Background_fn {
+	.Background_fv {
 		position: absolute;
 		overflow: visible;
 		width: 32px;
@@ -2359,11 +2458,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Cursor_Area_fo {
+	#Cursor_Area_fw {
 		opacity: 0.3;
 		fill: rgba(255,102,255,1);
 	}
-	.Cursor_Area_fo {
+	.Cursor_Area_fw {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -2372,11 +2471,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Touch_Area_fp {
+	#Touch_Area_fx {
 		opacity: 0.1;
 		fill: rgba(255,0,255,1);
 	}
-	.Touch_Area_fp {
+	.Touch_Area_fx {
 		display: none;
 		position: absolute;
 		overflow: visible;
@@ -2385,7 +2484,7 @@
 		left: -4px;
 		top: -8px;
 	}
-	#Group_72883_fq {
+	#Group_72883_fy {
 		position: absolute;
 		width: 18px;
 		height: 18px;
@@ -2393,11 +2492,11 @@
 		top: 7px;
 		overflow: visible;
 	}
-	#ToDelete_fr {
+	#ToDelete_fz {
 		opacity: 0;
 		fill: rgba(255,19,220,1);
 	}
-	.ToDelete_fr {
+	.ToDelete_fz {
 		position: absolute;
 		overflow: visible;
 		width: 18px;
@@ -2405,10 +2504,10 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Ellipse_9344_fs {
+	#Ellipse_9344_f {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9344_fs {
+	.Ellipse_9344_f {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -2416,10 +2515,10 @@
 		left: 7.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9345_ft {
+	#Ellipse_9345_f {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9345_ft {
+	.Ellipse_9345_f {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -2427,10 +2526,10 @@
 		left: 13.1px;
 		top: 7.1px;
 	}
-	#Ellipse_9346_fu {
+	#Ellipse_9346_f {
 		fill: rgba(70,70,70,1);
 	}
-	.Ellipse_9346_fu {
+	.Ellipse_9346_f {
 		position: absolute;
 		overflow: visible;
 		width: 3.8px;
@@ -2440,7 +2539,7 @@
 	}
 	#Enter_Credentials {
 		left: 398px;
-		top: 347px;
+		top: 338px;
 		position: absolute;
 		overflow: visible;
 		width: 116px;
@@ -2457,7 +2556,7 @@
 		width: 226.5px;
 		height: 68px;
 		left: 397.5px;
-		top: 527.5px;
+		top: 518.5px;
 		overflow: visible;
 	}
 	#Group_Label {
@@ -2476,7 +2575,7 @@
 		font-size: 16px;
 		color: rgba(33,37,41,1);
 	}
-	#Default_fy {
+	#Default_f {
 		position: absolute;
 		width: 226.5px;
 		height: 38px;
@@ -2533,15 +2632,15 @@
 		font-size: 16px;
 		color: rgba(134,141,150,1);
 	}
-	#Default_f {
+	#Default_gb {
 		position: absolute;
 		width: 226px;
 		height: 69px;
 		left: 398px;
-		top: 614px;
+		top: 605px;
 		overflow: visible;
 	}
-	#Group_Label_f {
+	#Group_Label_gc {
 		left: 0.5px;
 		top: 0px;
 		position: absolute;
@@ -2557,7 +2656,7 @@
 		font-size: 16px;
 		color: rgba(33,37,41,1);
 	}
-	#Default_ga {
+	#Default_gd {
 		position: absolute;
 		width: 226px;
 		height: 38px;
@@ -2573,7 +2672,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#Base_f {
+	#Base_gf {
 		position: absolute;
 		width: 226px;
 		height: 38px;
@@ -2581,7 +2680,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#InputBase_f {
+	#InputBase_gg {
 		fill: rgba(255,255,255,1);
 		stroke: rgba(224,224,224,1);
 		stroke-width: 1px;
@@ -2590,7 +2689,7 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.InputBase_f {
+	.InputBase_gg {
 		position: absolute;
 		overflow: visible;
 		width: 228px;
@@ -2653,7 +2752,7 @@
 	}
 	#Type_in_your_USTUST-affiliate_ {
 		left: 398.013px;
-		top: 374px;
+		top: 365px;
 		position: absolute;
 		overflow: visible;
 		width: 219px;
@@ -2672,10 +2771,10 @@
 		width: 279px;
 		height: 130px;
 		left: 375px;
-		top: 190px;
+		top: 181px;
 		overflow: visible;
 	}
-	#Join_our_GitHub_organization {
+	#Join_our_GitHub_organization_gn {
 		opacity: 0.802;
 		left: 94px;
 		top: 0px;
@@ -2689,12 +2788,679 @@
 		font-weight: normal;
 		font-size: 36px;
 		color: rgba(255,255,255,1);
-		scroll-margin-top: 110px;
+		scroll-margin-top: 50px;
+	}
+	#Rectangle_145935 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145935 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 103px;
+		left: 305px;
+		top: 602px;
+	}
+	#Rectangle_145937 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145937 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 125px;
+		left: 305px;
+		top: 720px;
+	}
+	#Rectangle_145939 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145939 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 103px;
+		left: 703px;
+		top: 601px;
+	}
+	#Rectangle_145941 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145941 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 125px;
+		left: 703px;
+		top: 720px;
+	}
+	#Rectangle_145943 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145943 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 103px;
+		left: 306px;
+		top: 863px;
+	}
+	#Rectangle_145945 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145945 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 103px;
+		left: 305px;
+		top: 602px;
+	}
+	#Rectangle_145947 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145947 {
+		position: absolute;
+		overflow: visible;
+		width: 1px;
+		height: 103px;
+		left: 703px;
+		top: 862px;
+	}
+	#Group_72936 {
+		position: absolute;
+		width: 1182px;
+		height: 367px;
+		left: 49px;
+		top: 1341px;
+		overflow: visible;
+	}
+	#Most_Popular_Products {
+		opacity: 0.802;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		left: 424px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 335px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 33px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_145786 {
+		opacity: 0.995;
+		fill: rgba(255,255,255,1);
+		stroke: rgba(230,230,230,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_145786 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 231px;
+		height: 301px;
+		left: 0px;
+		top: 84px;
+	}
+	#Alpine_Base_Image_315 {
+		opacity: 0.9;
+		left: 18px;
+		top: 176px;
+		position: absolute;
+		overflow: visible;
+		width: 135px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#A_security-hardened_Alpine_ima {
+		left: 18.468px;
+		top: 197.643px;
+		position: absolute;
+		overflow: visible;
+		width: 177.956px;
+		height: 74.74868774414062px;
+		line-height: 21px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(100,100,100,1);
+		letter-spacing: 0.11px;
+	}
+	#alpine {
+		filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 53px;
+		height: 52px;
+		left: 18px;
+		top: 113px;
+		overflow: visible;
+	}
+	#Rectangle_145789 {
+		opacity: 0.995;
+		fill: rgba(255,255,255,1);
+		stroke: rgba(230,230,230,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_145789 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 301px;
+		left: 242px;
+		top: 84px;
+	}
+	#GitLab_CI_Maven {
+		opacity: 0.9;
+		left: 263px;
+		top: 176px;
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#DevSecOps_enabled_CI_Gitlab_pi {
+		left: 263px;
+		top: 197.643px;
+		position: absolute;
+		overflow: visible;
+		width: 167.211px;
+		height: 125.82755279541016px;
+		line-height: 21px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(100,100,100,1);
+		letter-spacing: 0.11px;
+	}
+	#gitlab {
+		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 61.294px;
+		height: 58.421px;
+		left: 263.367px;
+		top: 107.084px;
+		overflow: visible;
+	}
+	#Rectangle_145793 {
+		opacity: 0.995;
+		fill: rgba(255,255,255,1);
+		stroke: rgba(230,230,230,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_145793 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 229px;
+		height: 301px;
+		left: 484px;
+		top: 84px;
+	}
+	#Nodejs_Base_Image {
+		opacity: 0.9;
+		left: 501px;
+		top: 176px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#A_security_hardened_Nodejs_ima {
+		left: 500.326px;
+		top: 197.643px;
+		position: absolute;
+		overflow: visible;
+		width: 173.674px;
+		height: 74.74868774414062px;
+		line-height: 21px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(100,100,100,1);
+		letter-spacing: 0.11px;
+	}
+	#Rectangle_145794 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145794 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 0px;
+		left: 501px;
+		top: 303px;
+	}
+	#Rectangle_145797 {
+		opacity: 0.995;
+		fill: rgba(255,255,255,1);
+		stroke: rgba(230,230,230,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_145797 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 301px;
+		left: 727px;
+		top: 84px;
+	}
+	#Web_Server_Manager {
+		opacity: 0.9;
+		left: 747px;
+		top: 176px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 19px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#A_web_server_tool_for_informat {
+		left: 747px;
+		top: 197.643px;
+		position: absolute;
+		overflow: visible;
+		width: 177.368px;
+		height: 149.3572998046875px;
+		line-height: 21px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(100,100,100,1);
+		letter-spacing: 0.11px;
+	}
+	#Rectangle_145798 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145798 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 0px;
+		left: 744px;
+		top: 303px;
+	}
+	#node-js {
+		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 72px;
+		height: 66px;
+		left: 504px;
+		top: 104px;
+		overflow: visible;
+	}
+	#java {
+		mix-blend-mode: luminosity;
+		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 65px;
+		height: 64px;
+		left: 743px;
+		top: 104px;
+		overflow: visible;
+	}
+	#Rectangle_145795 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(230,230,230,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_145795 {
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 301px;
+		left: 970px;
+		top: 84px;
+	}
+	#Jenkins_CI_Maven {
+		opacity: 0.9;
+		left: 987px;
+		top: 176px;
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#DevSecOps_enabled_CI_Jenkins_p {
+		left: 987.89px;
+		top: 197.666px;
+		position: absolute;
+		overflow: visible;
+		width: 176.445px;
+		height: 133.3338623046875px;
+		line-height: 21px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Rectangle_145796 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145796 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 0px;
+		left: 986px;
+		top: 303px;
+	}
+	#jenkins {
+		filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.161));
+		position: absolute;
+		width: 69px;
+		height: 66px;
+		left: 977px;
+		top: 104px;
+		overflow: visible;
+	}
+	#Rectangle_145788 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145788 {
+		position: absolute;
+		overflow: visible;
+		width: 176px;
+		height: 0px;
+		left: 18px;
+		top: 303px;
+	}
+	#Rectangle_145790 {
+		fill: rgba(42,41,41,1);
+	}
+	.Rectangle_145790 {
+		position: absolute;
+		overflow: visible;
+		width: 174px;
+		height: 0px;
+		left: 263px;
+		top: 303px;
+	}
+	#See_details {
+		opacity: 0.9;
+		left: 127px;
+		top: 331px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#See_details_hn {
+		opacity: 0.9;
+		left: 363px;
+		top: 331px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#See_details_ho {
+		opacity: 0.9;
+		left: 609px;
+		top: 331px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#See_details_hp {
+		opacity: 0.9;
+		left: 852px;
+		top: 331px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#See_details_hq {
+		opacity: 0.9;
+		left: 1095px;
+		top: 331px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(0,0,0,1);
+	}
+	#Rectangle_145924 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145924 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 0px;
+		left: 501px;
+		top: 303px;
+	}
+	#Rectangle_145926 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145926 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 0px;
+		left: 744px;
+		top: 303px;
+	}
+	#Rectangle_145932 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145932 {
+		position: absolute;
+		overflow: visible;
+		width: 177px;
+		height: 0px;
+		left: 986px;
+		top: 303px;
+	}
+	#Rectangle_145948 {
+		fill: rgba(234,234,234,1);
+	}
+	.Rectangle_145948 {
+		position: absolute;
+		overflow: visible;
+		width: 176px;
+		height: 0px;
+		left: 18px;
+		top: 303px;
+	}
+	#Rectangle_145949 {
+		fill: rgba(42,41,41,1);
+	}
+	.Rectangle_145949 {
+		position: absolute;
+		overflow: visible;
+		width: 174px;
+		height: 0px;
+		left: 263px;
+		top: 303px;
+	}
+	#header {
+		position: absolute;
+		width: 1280px;
+		height: 92px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_145951 {
+		opacity: 0.8;
+		fill: rgba(42,41,41,1);
+	}
+	.Rectangle_145951 {
+		position: absolute;
+		overflow: visible;
+		width: 1280px;
+		height: 92px;
+		left: 0px;
+		top: 0px;
+	}
+	#SolutionHub-Wide {
+		position: absolute;
+		width: 426px;
+		height: 48px;
+		left: 26px;
+		top: 22px;
+		overflow: visible;
+	}
+	#Create_a_new_account {
+		left: 1037px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 195px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Sign_in {
+		left: 937px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 62px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#Sign_in:hover {
+		font-weight: bold;
+	}
+	#or {
+		opacity: 0.602;
+		left: 1008px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
 	}
 	#n_2022_UST_PACE_Solution_Hub_v {
 		opacity: 0.6;
-		left: 763px;
-		top: 3955px;
+		left: 443px;
+		top: 3830px;
 		position: absolute;
 		overflow: visible;
 		width: 396px;
@@ -2712,8 +3478,8 @@
 		position: absolute;
 		width: 215px;
 		height: 40px;
-		left: 1658px;
-		top: 3949px;
+		left: 1022px;
+		top: 3824px;
 		overflow: visible;
 	}
 	#Follow_us {
@@ -2740,10 +3506,10 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#background {
+	#background_h {
 		fill: rgba(255,255,255,1);
 	}
-	.background {
+	.background_h {
 		position: absolute;
 		overflow: visible;
 		width: 40px;
@@ -2779,10 +3545,10 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#background_go {
+	#background_ia {
 		fill: rgba(255,255,255,1);
 	}
-	.background_go {
+	.background_ia {
 		position: absolute;
 		overflow: visible;
 		width: 40px;
@@ -2790,7 +3556,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#icons_gp {
+	#icons_ib {
 		position: absolute;
 		width: 20px;
 		height: 20px;
@@ -2818,10 +3584,10 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#background_gs {
+	#background_ie {
 		fill: rgba(255,255,255,1);
 	}
-	.background_gs {
+	.background_ie {
 		position: absolute;
 		overflow: visible;
 		width: 40px;
@@ -2829,7 +3595,7 @@
 		left: 0px;
 		top: 0px;
 	}
-	#icons_gt {
+	#icons_if {
 		position: absolute;
 		width: 20px;
 		height: 16px;
@@ -2848,664 +3614,6 @@
 		left: 0px;
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
-	}
-	#Group_72928 {
-		position: absolute;
-		width: 674.929px;
-		height: 226.231px;
-		left: 622.318px;
-		top: 766.767px;
-		overflow: visible;
-	}
-	#Cloud_Products {
-		opacity: 0.802;
-		left: 205.908px;
-		top: 0px;
-		position: absolute;
-		overflow: visible;
-		width: 249px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 36px;
-		color: rgba(255,255,255,1);
-	}
-	#Icon_awesome-aws {
-		fill: rgba(255,171,108,1);
-	}
-	.Icon_awesome-aws {
-		filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
-		overflow: visible;
-		position: absolute;
-		width: 106.378px;
-		height: 72.084px;
-		left: 36.939px;
-		top: 92.525px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Icon_simple-microsoftazure {
-		fill: rgba(60,146,222,1);
-	}
-	.Icon_simple-microsoftazure {
-		filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
-		overflow: visible;
-		position: absolute;
-		width: 96.981px;
-		height: 80.21px;
-		left: 280px;
-		top: 84.398px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Icon_awesome-cloud {
-		fill: rgba(234,234,234,1);
-	}
-	.Icon_awesome-cloud {
-		filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.161));
-		overflow: visible;
-		position: absolute;
-		width: 103.299px;
-		height: 80.211px;
-		left: 535px;
-		top: 85px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#AWS {
-		opacity: 0.804;
-		left: 60px;
-		top: 175px;
-		position: absolute;
-		overflow: visible;
-		width: 53px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Azure {
-		opacity: 0.804;
-		left: 295px;
-		top: 180px;
-		position: absolute;
-		overflow: visible;
-		width: 61px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#GCP {
-		opacity: 0.804;
-		left: 558px;
-		top: 176px;
-		position: absolute;
-		overflow: visible;
-		width: 51px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Amazon_Web_Services {
-		opacity: 0.698;
-		left: 8px;
-		top: 210px;
-		position: absolute;
-		overflow: visible;
-		width: 159px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-	}
-	#Microsoft_Azure {
-		opacity: 0.698;
-		left: 270px;
-		top: 210px;
-		position: absolute;
-		overflow: visible;
-		width: 113px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-	}
-	#Google_Cloud_Platform {
-		opacity: 0.698;
-		left: 500px;
-		top: 211px;
-		position: absolute;
-		overflow: visible;
-		width: 167px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-	}
-	#Rectangle_145788 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145788 {
-		position: absolute;
-		overflow: visible;
-		width: 190px;
-		height: 0px;
-		left: 307px;
-		top: 1837px;
-	}
-	#Rectangle_145790 {
-		fill: rgba(42,41,41,1);
-	}
-	.Rectangle_145790 {
-		position: absolute;
-		overflow: visible;
-		width: 188px;
-		height: 0px;
-		left: 589px;
-		top: 1837px;
-	}
-	#See_details {
-		opacity: 0.9;
-		left: 424px;
-		top: 1867px;
-		position: absolute;
-		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 13px;
-		color: rgba(0,0,0,1);
-	}
-	#See_details_g {
-		opacity: 0.9;
-		left: 702px;
-		top: 1867px;
-		position: absolute;
-		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 13px;
-		color: rgba(0,0,0,1);
-	}
-	#See_details_ha {
-		opacity: 0.9;
-		left: 982px;
-		top: 1867px;
-		position: absolute;
-		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 13px;
-		color: rgba(0,0,0,1);
-	}
-	#See_details_hb {
-		opacity: 0.9;
-		left: 1261px;
-		top: 1867px;
-		position: absolute;
-		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 13px;
-		color: rgba(0,0,0,1);
-	}
-	#See_details_hc {
-		opacity: 0.9;
-		left: 1540px;
-		top: 1867px;
-		position: absolute;
-		overflow: visible;
-		width: 68px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 13px;
-		color: rgba(0,0,0,1);
-	}
-	#Group_72929 {
-		position: absolute;
-		width: 1777.564px;
-		height: 265.346px;
-		left: 142.436px;
-		top: 1090.654px;
-		overflow: visible;
-	}
-	#Path_175 {
-		fill: rgba(42,41,41,1);
-	}
-	.Path_175 {
-		filter: drop-shadow(0px 6px 6px rgba(32, 113, 120, 1));
-		overflow: visible;
-		position: absolute;
-		width: 1777.564px;
-		height: 265.346px;
-		transform: translate(-549.542px, -1055.883px) matrix(1,0,0,1,549.5416,1055.8826) rotate(180deg);
-		transform-origin: center;
-		left: 0px;
-		top: 0px;
-	}
-	#Collaborate_with_fellow_UST_em {
-		left: 774.75px;
-		top: 118.472px;
-		position: absolute;
-		overflow: visible;
-		width: 921px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Join_our_community_of_develope {
-		left: 1134.564px;
-		top: 52.472px;
-		position: absolute;
-		overflow: visible;
-		width: 561px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 36px;
-		color: rgba(255,255,255,1);
-	}
-	#wireframe-button-standard {
-		position: absolute;
-		width: 238px;
-		height: 40px;
-		left: 1456.75px;
-		top: 179.472px;
-		overflow: visible;
-		padding: 9px 15px 9px 16px;
-	}
-	#background_hi {
-		fill: rgba(255,255,255,1);
-	}
-	.background_hi {
-		position: absolute;
-		overflow: visible;
-		width: 238px;
-		height: 40px;
-		left: 0px;
-		top: 0px;
-	}
-	#Join_our_GitHub_organization_hj {
-		left: 16px;
-		top: 9px;
-		position: absolute;
-		overflow: visible;
-		width: 208px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(42,41,41,1);
-	}
-	#Group_72935 {
-		position: absolute;
-		width: 1767.51px;
-		height: 292.184px;
-		left: 0px;
-		top: 124.968px;
-		overflow: visible;
-	}
-	#Path_174 {
-		fill: rgba(42,41,41,1);
-	}
-	.Path_174 {
-		filter: drop-shadow(0px 6px 6px rgba(32, 113, 120, 1));
-		overflow: visible;
-		position: absolute;
-		width: 1785.51px;
-		height: 310.184px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#A_vast_catalog_of_high-quality {
-		left: 71px;
-		top: 127px;
-		position: absolute;
-		overflow: visible;
-		width: 1019px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Welcome_to_UST_PACE_Solution_H {
-		opacity: 0.802;
-		left: 71px;
-		top: 53px;
-		position: absolute;
-		overflow: visible;
-		width: 591px;
-		white-space: nowrap;
-		text-align: center;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 36px;
-		color: rgba(255,255,255,1);
-	}
-	#wireframe-button-standard_ho {
-		position: absolute;
-		width: 133px;
-		height: 40px;
-		left: 71px;
-		top: 198px;
-		overflow: visible;
-		padding: 9px 15px 9px 16px;
-	}
-	#background_hp {
-		fill: rgba(255,255,255,1);
-	}
-	.background_hp {
-		position: absolute;
-		overflow: visible;
-		width: 133px;
-		height: 40px;
-		left: 0px;
-		top: 0px;
-	}
-	#Explore_assets {
-		left: 16px;
-		top: 9px;
-		position: absolute;
-		overflow: visible;
-		width: 103px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(42,41,41,1);
-	}
-	a:hover {
-		font-weight: 600;
-	}
-	#wireframe-button-standard_hr {
-		position: absolute;
-		width: 256px;
-		height: 40px;
-		left: 233px;
-		top: 198px;
-		overflow: visible;
-		padding: 9px 15px 9px 16px;
-	}
-	#background_hs {
-		fill: rgba(255,255,255,1);
-	}
-	.background_hs {
-		position: absolute;
-		overflow: visible;
-		width: 256px;
-		height: 40px;
-		left: 0px;
-		top: 0px;
-	}
-	#Learn_more_about_Solution_Hub {
-		left: 16px;
-		top: 9px;
-		position: absolute;
-		overflow: visible;
-		width: 226px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(42,41,41,1);
-	}
-	#Rectangle_145924 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145924 {
-		position: absolute;
-		overflow: visible;
-		width: 191px;
-		height: 0px;
-		left: 863px;
-		top: 1837px;
-	}
-	#Rectangle_145926 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145926 {
-		position: absolute;
-		overflow: visible;
-		width: 191px;
-		height: 0px;
-		left: 1143px;
-		top: 1837px;
-	}
-	#Rectangle_145932 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145932 {
-		position: absolute;
-		overflow: visible;
-		width: 192px;
-		height: 0px;
-		left: 1422px;
-		top: 1837px;
-	}
-	#Rectangle_145935 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145935 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 103px;
-		left: 684px;
-		top: 2580px;
-	}
-	#Rectangle_145937 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145937 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 125px;
-		left: 684px;
-		top: 2698px;
-	}
-	#Rectangle_145939 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145939 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 103px;
-		left: 1082px;
-		top: 2579px;
-	}
-	#Rectangle_145941 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145941 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 125px;
-		left: 1082px;
-		top: 2698px;
-	}
-	#Rectangle_145943 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145943 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 103px;
-		left: 685px;
-		top: 2841px;
-	}
-	#Rectangle_145945 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145945 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 103px;
-		left: 684px;
-		top: 2580px;
-	}
-	#Rectangle_145947 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145947 {
-		position: absolute;
-		overflow: visible;
-		width: 1px;
-		height: 103px;
-		left: 1082px;
-		top: 2840px;
-	}
-	#Rectangle_145948 {
-		fill: rgba(234,234,234,1);
-	}
-	.Rectangle_145948 {
-		position: absolute;
-		overflow: visible;
-		width: 190px;
-		height: 0px;
-		left: 307px;
-		top: 1837px;
-	}
-	#Rectangle_145949 {
-		fill: rgba(42,41,41,1);
-	}
-	.Rectangle_145949 {
-		position: absolute;
-		overflow: visible;
-		width: 188px;
-		height: 0px;
-		left: 589px;
-		top: 1837px;
-	}
-	#Header {
-		position: fixed;
-		width: 1920px;
-		height: 127px;
-		left: 0px;
-		top: -17px;
-		overflow: visible;
-	}
-	#Path_176 {
-		opacity: 0.8;
-		fill: rgba(42,41,41,1);
-	}
-	.Path_176 {
-		overflow: visible;
-		position: absolute;
-		width: 1920px;
-		height: 90px;
-		left: 0px;
-		top: 18px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#SolutionHub-Wide {
-		position: absolute;
-		width: 611px;
-		height: 127px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#Create_a_new_account {
-		left: 1634px;
-		top: 47px;
-		position: absolute;
-		overflow: visible;
-		width: 234px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#Sign_in {
-		left: 1519px;
-		top: 47px;
-		position: absolute;
-		overflow: visible;
-		width: 74px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
-	}
-	#or {
-		opacity: 0.602;
-		left: 1602px;
-		top: 47px;
-		position: absolute;
-		overflow: visible;
-		width: 23px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Avenir;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
-		color: rgba(255,255,255,1);
 	}
 </style>
 <script id="applicationScript">
@@ -6420,9 +6528,64 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="SolutionHub-LandingPage">
-	<img id="AdobeStock_372797275" src="AdobeStock_372797275.png" srcset="AdobeStock_372797275.png 1x, AdobeStock_372797275@2x.png 2x">
-		
+<div id="Web_1280__1">
+	<div id="Group_72938">
+		<img id="collaboration" src="collaboration.png" srcset="collaboration.png 1x, collaboration@2x.png 2x">
+			
+	</div>
+	<div id="Group_72929">
+		<div id="Collaborate_with_fellow_UST_em">
+			<span>Collaborate with fellow UST employees to discuss, develop, and publish new projects.</span>
+		</div>
+		<div id="Join_our_community_of_develope">
+			<span>Join our community of developers.</span>
+		</div>
+		<div id="wireframe-button-standard" class="wireframe_button_standard glow-on-hover">
+			<svg class="background">
+				<rect id="background" rx="4" ry="4" x="0" y="0" width="186" height="34">
+				</rect>
+			</svg>
+			<div id="Join_our_GitHub_organization">
+				<span><a href="#Join_our_GitHub_organization_gn" style="color:#2A2929; text-decoration:none;">Join our GitHub organization</a></span>
+			</div>
+		</div>
+	</div>
+	<svg class="Path_178" viewBox="-0.823 -40.415 1280.823 747.467">
+		<path id="Path_178" d="M -0.82275390625 142.3625183105469 L 638.0859375 -40.41479110717773 L 1280 142.3625183105469 L 1280 707.0521850585938 L 638.0859375 518.06884765625 L -0.82275390625 707.0521850585938 L -0.82275390625 142.3625183105469 Z">
+		</path>
+	</svg>
+	<svg class="Path_177" viewBox="-0.823 -77.237 1280.823 610.91">
+		<path id="Path_177" d="M -0.82275390625 98.380859375 L 635.98095703125 -77.237060546875 L 1280 98.380859375 L 1280 533.6732177734375 L 635.98095703125 387.240234375 L -0.82275390625 533.6732177734375 L -0.82275390625 98.380859375 Z">
+		</path>
+	</svg>
+	<div id="Group_72935">
+		<img id="AdobeStock_479294594" src="AdobeStock_479294594.png" srcset="AdobeStock_479294594.png 1x, AdobeStock_479294594@2x.png 2x">
+			
+		<div id="A_vast_catalog_of_high-quality">
+			<span>A vast catalog of high-quality reusable components built by UST developers. At your fingertips.</span><br/>
+		</div>
+		<div id="Welcome_to_UST_PACE_Solution_H">
+			<span>Welcome to UST PACE Solution Hub</span>
+		</div>
+		<div id="wireframe-button-standard_x" class="wireframe_button_standard glow-on-hover">
+			<svg class="background_y">
+				<rect id="background_y" rx="4" ry="4" x="0" y="0" width="107" height="34">
+				</rect>
+			</svg>
+			<div id="Explore_assets">
+				<span><a href="https://solutionhub.ustpace.com/#/products?page=0&pageSize=10&sort=name,asc" style="color:#2A2929; text-decoration:none;">Explore assets</a></span>
+			</div>
+		</div>
+		<div id="wireframe-button-standard_" class="wireframe_button_standard glow-on-hover">
+			<svg class="background_">
+				<rect id="background_" rx="4" ry="4" x="0" y="0" width="200" height="34">
+				</rect>
+			</svg>
+			<div id="Learn_more_about_Solution_Hub">
+				<span><a href="https://brendon2020.github.io/solution-hub-docs/docs/about/about.html" style="color:#2A2929; text-decoration:none">Learn more about Solution Hub</a></span>
+			</div>
+		</div>
+	</div>
 	<div id="Group_72927">
 		<div id="Popular_Categories">
 			<span>Popular Categories</span>
@@ -6431,8 +6594,8 @@ window.application = new Application();
 			<path id="Icon_awesome-building" d="M 66.30110168457031 72.99203491210938 L 63.25976943969727 72.99203491210938 L 63.25976943969727 3.649601936340332 C 63.25976943969727 1.633957266807556 61.62581253051758 0 59.61016845703125 0 L 8.51573657989502 0 C 6.50009298324585 0 4.866135597229004 1.633957266807556 4.866135597229004 3.649601936340332 L 4.866135597229004 72.99203491210938 L 1.824800968170166 72.99203491210938 C 0.8170545697212219 72.99203491210938 0 73.80910491943359 0 74.81684112548828 L 0 77.85816955566406 L 68.12589263916016 77.85816955566406 L 68.12589263916016 74.81684112548828 C 68.12589263916016 73.80910491943359 67.30884552001953 72.99203491210938 66.30110168457031 72.99203491210938 Z M 19.46454238891602 11.55707263946533 C 19.46454238891602 10.54932594299316 20.28160095214844 9.732271194458008 21.28934669494629 9.732271194458008 L 27.37201690673828 9.732271194458008 C 28.37975883483887 9.732271194458008 29.19681549072266 10.54932594299316 29.19681549072266 11.55707263946533 L 29.19681549072266 17.63974380493164 C 29.19681549072266 18.64748764038086 28.37975883483887 19.46454238891602 27.37201690673828 19.46454238891602 L 21.28934669494629 19.46454238891602 C 20.28160095214844 19.46454238891602 19.46454238891602 18.64748764038086 19.46454238891602 17.63974380493164 L 19.46454238891602 11.55707263946533 Z M 19.46454238891602 26.15548133850098 C 19.46454238891602 25.14773368835449 20.28160095214844 24.33067893981934 21.28934669494629 24.33067893981934 L 27.37201690673828 24.33067893981934 C 28.37975883483887 24.33067893981934 29.19681549072266 25.14773368835449 29.19681549072266 26.15548133850098 L 29.19681549072266 32.23815155029297 C 29.19681549072266 33.24589157104492 28.37975883483887 34.06294631958008 27.37201690673828 34.06294631958008 L 21.28934669494629 34.06294631958008 C 20.28160095214844 34.06294631958008 19.46454238891602 33.24589157104492 19.46454238891602 32.23815155029297 L 19.46454238891602 26.15548133850098 Z M 27.37201690673828 48.66135787963867 L 21.28934669494629 48.66135787963867 C 20.28160095214844 48.66135787963867 19.46454238891602 47.84429931640625 19.46454238891602 46.83655548095703 L 19.46454238891602 40.75389099121094 C 19.46454238891602 39.74613952636719 20.28160095214844 38.92908477783203 21.28934669494629 38.92908477783203 L 27.37201690673828 38.92908477783203 C 28.37975883483887 38.92908477783203 29.19681549072266 39.74613952636719 29.19681549072266 40.75389099121094 L 29.19681549072266 46.83655548095703 C 29.19681549072266 47.84429931640625 28.37975883483887 48.66135787963867 27.37201690673828 48.66135787963867 Z M 38.92908477783203 72.99203491210938 L 29.19681549072266 72.99203491210938 L 29.19681549072266 60.21842575073242 C 29.19681549072266 59.2106819152832 30.01387214660645 58.39363098144531 31.0216178894043 58.39363098144531 L 37.10428619384766 58.39363098144531 C 38.11203384399414 58.39363098144531 38.92908477783203 59.2106819152832 38.92908477783203 60.21842575073242 L 38.92908477783203 72.99203491210938 Z M 48.66135787963867 46.83655548095703 C 48.66135787963867 47.84429931640625 47.84429931640625 48.66135787963867 46.83655548095703 48.66135787963867 L 40.75389099121094 48.66135787963867 C 39.74613952636719 48.66135787963867 38.92908477783203 47.84429931640625 38.92908477783203 46.83655548095703 L 38.92908477783203 40.75389099121094 C 38.92908477783203 39.74613952636719 39.74613952636719 38.92908477783203 40.75389099121094 38.92908477783203 L 46.83655548095703 38.92908477783203 C 47.84429931640625 38.92908477783203 48.66135787963867 39.74613952636719 48.66135787963867 40.75389099121094 L 48.66135787963867 46.83655548095703 Z M 48.66135787963867 32.23815155029297 C 48.66135787963867 33.24589157104492 47.84429931640625 34.06294631958008 46.83655548095703 34.06294631958008 L 40.75389099121094 34.06294631958008 C 39.74613952636719 34.06294631958008 38.92908477783203 33.24589157104492 38.92908477783203 32.23815155029297 L 38.92908477783203 26.15548133850098 C 38.92908477783203 25.14773368835449 39.74613952636719 24.33067893981934 40.75389099121094 24.33067893981934 L 46.83655548095703 24.33067893981934 C 47.84429931640625 24.33067893981934 48.66135787963867 25.14773368835449 48.66135787963867 26.15548133850098 L 48.66135787963867 32.23815155029297 Z M 48.66135787963867 17.63974380493164 C 48.66135787963867 18.64748764038086 47.84429931640625 19.46454238891602 46.83655548095703 19.46454238891602 L 40.75389099121094 19.46454238891602 C 39.74613952636719 19.46454238891602 38.92908477783203 18.64748764038086 38.92908477783203 17.63974380493164 L 38.92908477783203 11.55707263946533 C 38.92908477783203 10.54932594299316 39.74613952636719 9.732271194458008 40.75389099121094 9.732271194458008 L 46.83655548095703 9.732271194458008 C 47.84429931640625 9.732271194458008 48.66135787963867 10.54932594299316 48.66135787963867 11.55707263946533 L 48.66135787963867 17.63974380493164 Z">
 			</path>
 		</svg>
-		<svg class="Icon_ionic-ios-infinite" viewBox="1.688 10.687 119.581 53.654">
-			<path id="Icon_ionic-ios-infinite" d="M 113.274787902832 18.52542877197266 C 108.1182708740234 13.47202587127686 101.2085189819336 10.68749809265137 93.88623809814453 10.68749809265137 C 86.53818511962891 10.68749809265137 79.65421295166016 13.47202587127686 74.49768829345703 18.52542877197266 L 66.45350646972656 26.26021957397461 C 66.04098510742188 26.67274284362793 66.04098510742188 27.34309196472168 66.45350646972656 27.72983169555664 L 71.45534515380859 32.65431976318359 C 71.84207153320312 33.04106140136719 72.48665618896484 33.04106140136719 72.89916229248047 32.65431976318359 L 80.89178466796875 24.89373588562012 C 84.37244415283203 21.51621055603027 88.96175384521484 19.65986251831055 93.86045074462891 19.65986251831055 C 98.75914764404297 19.65986251831055 103.3484649658203 21.51621437072754 106.8291244506836 24.89373588562012 C 110.2840042114258 28.27126502990723 112.166130065918 32.75744247436523 112.166130065918 37.5272331237793 C 112.166130065918 42.271240234375 110.2582092285156 46.75741958618164 106.8291244506836 50.0833854675293 C 103.3484649658203 53.46090698242188 98.75914764404297 55.31725311279297 93.86045074462891 55.31725311279297 C 88.96175384521484 55.31725311279297 84.37244415283203 53.46090698242188 80.89178466796875 50.0833854675293 L 48.50878143310547 18.52542877197266 C 43.30068969726562 13.47202587127686 36.41672515869141 10.68749809265137 29.1202335357666 10.68749809265137 C 21.77218437194824 10.68749809265137 14.88821697235107 13.47202587127686 9.731688499450684 18.52542877197266 C 4.549372673034668 23.57882118225098 1.68750011920929 30.30809211730957 1.68750011920929 37.50145721435547 C 1.68750011920929 44.66903305053711 4.549372673034668 51.42409133911133 9.731684684753418 56.47747421264648 C 14.88821601867676 61.53086471557617 21.7979621887207 64.31540679931641 29.1202335357666 64.31540679931641 C 36.46828079223633 64.31540679931641 43.35224914550781 61.53087997436523 48.5087776184082 56.47747421264648 L 56.50140762329102 48.74267578125 C 56.91392135620117 48.33016967773438 56.91392135620117 47.65980911254883 56.50140762329102 47.2730712890625 L 51.49956893920898 42.40015029907227 C 51.11283111572266 42.0134162902832 50.46825790405273 42.0134162902832 50.05573654174805 42.40015029907227 L 42.0631217956543 50.10916519165039 C 38.58246231079102 53.48669052124023 33.99315643310547 55.34304046630859 29.09444808959961 55.34304046630859 C 24.19574737548828 55.34304046630859 19.60643768310547 53.48669052124023 16.12577819824219 50.10916519165039 C 12.67090606689453 46.73164367675781 10.78877258300781 42.24545669555664 10.78877258300781 37.47566986083984 C 10.78877258300781 32.73165893554688 12.69668674468994 28.27126121520996 16.12577819824219 24.91951370239258 C 19.60643768310547 21.54198837280273 24.19574737548828 19.68564605712891 29.09444808959961 19.68564605712891 C 33.99315643310547 19.68564605712891 38.58246231079102 21.5419921875 42.0631217956543 24.91951370239258 L 74.42033386230469 56.50325775146484 C 79.62843322753906 61.55664825439453 86.51240539550781 64.34119415283203 93.80889129638672 64.34119415283203 C 101.1569442749023 64.34119415283203 108.0409088134766 61.55666732788086 113.1974487304688 56.50325775146484 C 118.405517578125 51.44986343383789 121.2674026489258 44.72058868408203 121.2674026489258 37.5272331237793 C 121.3189697265625 30.3338794708252 118.4570846557617 23.57882118225098 113.274787902832 18.52542877197266 Z">
+		<svg class="Icon_ionic-ios-infinite" viewBox="1.688 10.687 103.263 45.475">
+			<path id="Icon_ionic-ios-infinite" d="M 98.04811096191406 17.33063507080078 C 93.59523010253906 13.04755973815918 87.62834930419922 10.68749809265137 81.30522918701172 10.68749809265137 C 74.95986175537109 10.68749809265137 69.01523590087891 13.04755973815918 64.56235504150391 17.33063507080078 L 57.61584091186523 23.8863525390625 C 57.25961303710938 24.23599243164062 57.25961303710938 24.80415534973145 57.61584091186523 25.1319408416748 L 61.93515777587891 29.30575180053711 C 62.26911163330078 29.63354110717773 62.82574081420898 29.63354110717773 63.18196105957031 29.30575180053711 L 70.08393859863281 22.72817230224609 C 73.08964538574219 19.86550903320312 77.05271911621094 18.29213714599609 81.282958984375 18.29213714599609 C 85.51320648193359 18.29213714599609 89.47628784179688 19.86551284790039 92.48199462890625 22.72817230224609 C 95.46543884277344 25.59083938598633 97.09073638916016 29.39315605163574 97.09073638916016 33.43585205078125 C 97.09073638916016 37.45669555664062 95.44316101074219 41.25901031494141 92.48199462890625 44.07797622680664 C 89.47628784179688 46.94063568115234 85.51320648193359 48.51400756835938 81.282958984375 48.51400756835938 C 77.05271911621094 48.51400756835938 73.08964538574219 46.94063568115234 70.08393859863281 44.07797622680664 L 42.11977005004883 17.33063507080078 C 37.62234878540039 13.04755973815918 31.67773818969727 10.68749809265137 25.37689208984375 10.68749809265137 C 19.03152275085449 10.68749809265137 13.08690929412842 13.04755973815918 8.634016036987305 17.33063507080078 C 4.158854961395264 21.61370086669922 1.68750011920929 27.31717681884766 1.68750011920929 33.41400527954102 C 1.68750011920929 39.48897552490234 4.158854961395264 45.21430969238281 8.634014129638672 49.49736785888672 C 13.0869083404541 53.78042984008789 19.05378341674805 56.14050674438477 25.37689208984375 56.14050674438477 C 31.72225761413574 56.14050674438477 37.66687393188477 53.78044509887695 42.11976623535156 49.49736785888672 L 49.02175903320312 42.94164276123047 C 49.37798309326172 42.59201431274414 49.37798309326172 42.02384567260742 49.02175903320312 41.69606018066406 L 44.70244598388672 37.56595230102539 C 44.36848449707031 37.23817443847656 43.81186294555664 37.23817443847656 43.45563507080078 37.56595230102539 L 36.55365371704102 44.09982681274414 C 33.54794692993164 46.96249008178711 29.58487892150879 48.53586196899414 25.35462379455566 48.53586196899414 C 21.1243782043457 48.53586196899414 17.16130447387695 46.96249008178711 14.15559959411621 44.09982681274414 C 11.17216300964355 41.23716735839844 9.546856880187988 37.43484115600586 9.546856880187988 33.39215087890625 C 9.546856880187988 29.37130165100098 11.19442462921143 25.59083557128906 14.15559959411621 22.75002098083496 C 17.16130447387695 19.88735580444336 21.1243782043457 18.31398963928223 25.35462379455566 18.31398963928223 C 29.58487892150879 18.31398963928223 33.54794692993164 19.88735961914062 36.55365371704102 22.75002098083496 L 64.49555206298828 49.51921844482422 C 68.99298095703125 53.80228424072266 74.93759918212891 56.16236114501953 81.23843383789062 56.16236114501953 C 87.58381652832031 56.16236114501953 93.52841949462891 53.80230331420898 97.9813232421875 49.51921844482422 C 102.4787292480469 45.23615264892578 104.9500885009766 39.53267288208008 104.9500885009766 33.43585205078125 C 104.9946212768555 27.33903503417969 102.5232543945312 21.61370086669922 98.04811096191406 17.33063507080078 Z">
 			</path>
 		</svg>
 		<svg class="Icon_awesome-database" viewBox="0 0 68.126 77.858">
@@ -6454,711 +6617,6 @@ window.application = new Application();
 		</div>
 		<div id="Developer_Kits">
 			<span>Developer Kits</span>
-		</div>
-	</div>
-	<div id="Most_Popular_Products">
-		<span>Most Popular Products</span>
-	</div>
-	<svg class="Rectangle_145786">
-		<rect id="Rectangle_145786" rx="4" ry="4" x="0" y="0" width="231" height="307">
-		</rect>
-	</svg>
-	<div id="Alpine_Base_Image_315">
-		<span>Alpine Base Image 3.15</span>
-	</div>
-	<div id="A_security-hardened_Alpine_ima">
-		<span>A security-hardened Alpine image.</span>
-	</div>
-	<img id="alpine" src="alpine.png" srcset="alpine.png 1x, alpine@2x.png 2x">
-		
-	<svg class="Rectangle_145789">
-		<rect id="Rectangle_145789" rx="4" ry="4" x="0" y="0" width="230" height="307">
-		</rect>
-	</svg>
-	<div id="GitLab_CI_Maven">
-		<span>GitLab CI Maven</span>
-	</div>
-	<div id="DevSecOps_enabled_CI_Gitlab_pi">
-		<span>DevSecOps enabled CI Gitlab pipelines for Maven builds. Consists of various stages and scanning methods to ensure maximum security.</span>
-	</div>
-	<img id="gitlab" src="gitlab.png" srcset="gitlab.png 1x, gitlab@2x.png 2x">
-		
-	<svg class="Rectangle_145793">
-		<rect id="Rectangle_145793" rx="4" ry="4" x="0" y="0" width="229" height="307">
-		</rect>
-	</svg>
-	<div id="Nodejs_Base_Image">
-		<span>Node.js Base Image</span>
-	</div>
-	<div id="A_security_hardened_Nodejs_ima">
-		<span>A security hardened Node.js image.</span>
-	</div>
-	<svg class="Rectangle_145794">
-		<rect id="Rectangle_145794" rx="0" ry="0" x="0" y="0" width="191" height="0">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145797">
-		<rect id="Rectangle_145797" rx="4" ry="4" x="0" y="0" width="230" height="307">
-		</rect>
-	</svg>
-	<div id="Web_Server_Manager">
-		<span>Web Server Manager</span>
-	</div>
-	<div id="A_web_server_tool_for_informat">
-		<span>A web server tool for information management and maintenance, performing functions such as entity tracing and URL authority/name identification.</span>
-	</div>
-	<svg class="Rectangle_145798">
-		<rect id="Rectangle_145798" rx="0" ry="0" x="0" y="0" width="191" height="0">
-		</rect>
-	</svg>
-	<img id="node-js" src="node-js.png" srcset="node-js.png 1x, node-js@2x.png 2x">
-		
-	<img id="java" src="java.png" srcset="java.png 1x, java@2x.png 2x">
-		
-	<svg class="Rectangle_145799">
-		<rect id="Rectangle_145799" rx="4" ry="4" x="0" y="0" width="264" height="305">
-		</rect>
-	</svg>
-	<div id="Technical_Documentation">
-		<span>Technical Documentation</span>
-	</div>
-	<img id="techincal_documentation" src="techincal_documentation.png" srcset="techincal_documentation.png 1x, techincal_documentation@2x.png 2x">
-		
-	<div id="Access_clear_detailed_and_conc">
-		<span>Access clear, detailed, and<br/>concise technical <br/>documentation to get your<br/>product up and running<br/>quickly.<br/><br/><br/></span><br/>
-	</div>
-	<svg class="Rectangle_145800">
-		<rect id="Rectangle_145800" rx="4" ry="4" x="0" y="0" width="264" height="305">
-		</rect>
-	</svg>
-	<div id="Use_Cases">
-		<span>Use Cases</span>
-	</div>
-	<img id="use-case" src="use-case.png" srcset="use-case.png 1x, use-case@2x.png 2x">
-		
-	<div id="Explore_use_cases_to_see_how_M">
-		<span>Explore use cases to see<br/>how Marketplace and its<br/>products can help you <br/>find solutions to your<br/>problems.<br/><br/><br/></span><br/>
-	</div>
-	<svg class="Rectangle_145801">
-		<rect id="Rectangle_145801" rx="4" ry="4" x="0" y="0" width="264" height="305">
-		</rect>
-	</svg>
-	<div id="Backlogs">
-		<span>Backlogs</span>
-	</div>
-	<img id="backlog" src="backlog.png" srcset="backlog.png 1x, backlog@2x.png 2x">
-		
-	<div id="Browse_through_backlogs__to_fi">
-		<span>Browse through backlogs <br/>to find out what new <br/>products are being <br/>developed, and where<br/>you can contribute.<br/><br/><br/></span><br/>
-	</div>
-	<svg class="Rectangle_145802">
-		<rect id="Rectangle_145802" rx="4" ry="4" x="0" y="0" width="264" height="305">
-		</rect>
-	</svg>
-	<div id="Discussion_Boards">
-		<span>Discussion Boards</span>
-	</div>
-	<img id="discussion" src="discussion.png" srcset="discussion.png 1x, discussion@2x.png 2x">
-		
-	<div id="Observe_and_participate__in_di">
-		<span>Observe and participate <br/>in discussion boards to <br/>collaboratively<br/>create and evolve ideas<br/>into products.<br/><br/><br/><br/></span><br/>
-	</div>
-	<div id="Community">
-		<span>Community</span>
-	</div>
-	<svg class="Rectangle_145795">
-		<rect id="Rectangle_145795" rx="4" ry="4" x="0" y="0" width="230" height="307">
-		</rect>
-	</svg>
-	<div id="Jenkins_CI_Maven">
-		<span>Jenkins CI Maven</span>
-	</div>
-	<div id="DevSecOps_enabled_CI_Jenkins_p">
-		<span>DevSecOps enabled CI Jenkins pipelines for Maven builds. Consists of various stages and scanning methods to ensure maximum security.</span>
-	</div>
-	<svg class="Rectangle_145796">
-		<rect id="Rectangle_145796" rx="0" ry="0" x="0" y="0" width="192" height="0">
-		</rect>
-	</svg>
-	<img id="jenkins" src="jenkins.png" srcset="jenkins.png 1x, jenkins@2x.png 2x">
-		
-	<svg class="Rectangle_145517">
-		<rect id="Rectangle_145517" rx="4" ry="4" x="0" y="0" width="360" height="104">
-		</rect>
-	</svg>
-	<div id="Talk_about_ideas_for_new_featu">
-		<span>Talk about ideas for new features or asset by creating a discussion at the organization or repository level.</span>
-	</div>
-	<svg class="Rectangle_145519">
-		<rect id="Rectangle_145519" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145899">
-		<rect id="Rectangle_145899" rx="4" ry="4" x="0" y="0" width="360" height="126">
-		</rect>
-	</svg>
-	<div id="Share_your_thoughts_about_an_a">
-		<span>Share your thoughts about an asset by participating its discussion board. Tag members or teams in your comments, attach files or code snippets. </span>
-	</div>
-	<svg class="Rectangle_145901">
-		<rect id="Rectangle_145901" rx="0" ry="0" x="0" y="0" width="1" height="125">
-		</rect>
-	</svg>
-	<div id="Group_72890">
-		<div id="Action_button">
-			<svg class="Placement_Area">
-				<rect id="Placement_Area" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Background">
-				<rect id="Background" rx="4" ry="4" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Cursor_Area">
-				<rect id="Cursor_Area" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Touch_Area">
-				<rect id="Touch_Area" rx="0" ry="0" x="0" y="0" width="40" height="48">
-				</rect>
-			</svg>
-			<div id="Group_72883">
-				<svg class="ToDelete">
-					<rect id="ToDelete" rx="0" ry="0" x="0" y="0" width="18" height="18">
-					</rect>
-				</svg>
-				<svg class="Ellipse_9344">
-					<ellipse id="Ellipse_9344" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9345">
-					<ellipse id="Ellipse_9345" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9346">
-					<ellipse id="Ellipse_9346" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div id="Suggestions_or_concerns">
-		<span>Suggestions or concerns?</span>
-	</div>
-	<svg class="Rectangle_145902">
-		<rect id="Rectangle_145902" rx="4" ry="4" x="0" y="0" width="360" height="104">
-		</rect>
-	</svg>
-	<div id="Follow_Discussions">
-		<span>Follow Discussions.</span>
-	</div>
-	<div id="Find_a_discussion_that_interes">
-		<span>Find a discussion that interests you? <br/>Subscribe to the discussion to receive notifications.</span>
-	</div>
-	<svg class="Rectangle_145904">
-		<rect id="Rectangle_145904" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145905">
-		<rect id="Rectangle_145905" rx="4" ry="4" x="0" y="0" width="360" height="126">
-		</rect>
-	</svg>
-	<div id="Create_backlog_items">
-		<span>Create backlog items.</span>
-	</div>
-	<div id="Turn_a_discussion_into_a_backl">
-		<span>Turn a discussion into a backlog item by creating an issue from a discussion. Assign the issue to your team’s project board.</span>
-	</div>
-	<svg class="Rectangle_145907">
-		<rect id="Rectangle_145907" rx="0" ry="0" x="0" y="0" width="1" height="125">
-		</rect>
-	</svg>
-	<div id="Group_72892">
-		<div id="Action_button_cp">
-			<svg class="Placement_Area_cq">
-				<rect id="Placement_Area_cq" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Background_cr">
-				<rect id="Background_cr" rx="4" ry="4" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Cursor_Area_cs">
-				<rect id="Cursor_Area_cs" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Touch_Area_ct">
-				<rect id="Touch_Area_ct" rx="0" ry="0" x="0" y="0" width="40" height="48">
-				</rect>
-			</svg>
-			<div id="Group_72883_cu">
-				<svg class="ToDelete_cv">
-					<rect id="ToDelete_cv" rx="0" ry="0" x="0" y="0" width="18" height="18">
-					</rect>
-				</svg>
-				<svg class="Ellipse_9344_cw">
-					<ellipse id="Ellipse_9344_cw" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9345_cx">
-					<ellipse id="Ellipse_9345_cx" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9346_cy">
-					<ellipse id="Ellipse_9346_cy" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<svg class="Rectangle_145908">
-		<rect id="Rectangle_145908" rx="4" ry="4" x="0" y="0" width="360" height="104">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145910">
-		<rect id="Rectangle_145910" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<div id="Group_72893">
-		<div id="Action_button_c">
-			<svg class="Placement_Area_c">
-				<rect id="Placement_Area_c" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Background_c">
-				<rect id="Background_c" rx="4" ry="4" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Cursor_Area_c">
-				<rect id="Cursor_Area_c" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Touch_Area_c">
-				<rect id="Touch_Area_c" rx="0" ry="0" x="0" y="0" width="40" height="48">
-				</rect>
-			</svg>
-			<div id="Group_72883_c">
-				<svg class="ToDelete_c">
-					<rect id="ToDelete_c" rx="0" ry="0" x="0" y="0" width="18" height="18">
-					</rect>
-				</svg>
-				<svg class="Ellipse_9344_c">
-					<ellipse id="Ellipse_9344_c" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9345_da">
-					<ellipse id="Ellipse_9345_da" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9346_db">
-					<ellipse id="Ellipse_9346_db" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div id="Share_your_ideas">
-		<span>Share your ideas.</span>
-	</div>
-	<svg class="Rectangle_145913">
-		<rect id="Rectangle_145913" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<div id="Initiate_a_repository">
-		<span>Initiate a repository.</span>
-	</div>
-	<div id="Create_a_repository_for_an_uni">
-		<span>Create a repository for an uninitialized backlog item and assign them to your team to begin working on.</span>
-	</div>
-	<svg class="Rectangle_145914">
-		<rect id="Rectangle_145914" rx="4" ry="4" x="0" y="0" width="360" height="104">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145916">
-		<rect id="Rectangle_145916" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<div id="Group_72895">
-		<div id="Action_button_dj">
-			<svg class="Placement_Area_dk">
-				<rect id="Placement_Area_dk" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Background_dl">
-				<rect id="Background_dl" rx="4" ry="4" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Cursor_Area_dm">
-				<rect id="Cursor_Area_dm" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Touch_Area_dn">
-				<rect id="Touch_Area_dn" rx="0" ry="0" x="0" y="0" width="40" height="48">
-				</rect>
-			</svg>
-			<div id="Group_72883_do">
-				<svg class="ToDelete_dp">
-					<rect id="ToDelete_dp" rx="0" ry="0" x="0" y="0" width="18" height="18">
-					</rect>
-				</svg>
-				<svg class="Ellipse_9344_dq">
-					<ellipse id="Ellipse_9344_dq" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9345_dr">
-					<ellipse id="Ellipse_9345_dr" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9346_ds">
-					<ellipse id="Ellipse_9346_ds" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div id="Contribute_to_a_repository">
-		<span>Contribute to a repository.</span>
-	</div>
-	<div id="Write_code_Discuss_repository-">
-		<span>Write code. Discuss repository-specific topics in the repository’s very own “Discussions” tab.</span>
-	</div>
-	<div id="Group_72896">
-		<div id="Action_button_dw">
-			<svg class="Placement_Area_dx">
-				<rect id="Placement_Area_dx" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Background_dy">
-				<rect id="Background_dy" rx="4" ry="4" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Cursor_Area_dz">
-				<rect id="Cursor_Area_dz" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Touch_Area_d">
-				<rect id="Touch_Area_d" rx="0" ry="0" x="0" y="0" width="40" height="48">
-				</rect>
-			</svg>
-			<div id="Group_72883_d">
-				<svg class="ToDelete_d">
-					<rect id="ToDelete_d" rx="0" ry="0" x="0" y="0" width="18" height="18">
-					</rect>
-				</svg>
-				<svg class="Ellipse_9344_d">
-					<ellipse id="Ellipse_9344_d" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9345_d">
-					<ellipse id="Ellipse_9345_d" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9346_d">
-					<ellipse id="Ellipse_9346_d" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<img id="ideas" src="ideas.png" srcset="ideas.png 1x, ideas@2x.png 2x">
-		
-	<img id="suggestions" src="suggestions.png" srcset="suggestions.png 1x, suggestions@2x.png 2x">
-		
-	<img id="follow" src="follow.png" srcset="follow.png 1x, follow@2x.png 2x">
-		
-	<img id="repository" src="repository.png" srcset="repository.png 1x, repository@2x.png 2x">
-		
-	<img id="kanban" src="kanban.png" srcset="kanban.png 1x, kanban@2x.png 2x">
-		
-	<img id="code" src="code.png" srcset="code.png 1x, code@2x.png 2x">
-		
-	<div id="Group_72891">
-		<div id="Action_button_ed">
-			<svg class="Placement_Area_ee">
-				<rect id="Placement_Area_ee" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Background_ef">
-				<rect id="Background_ef" rx="4" ry="4" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Cursor_Area_eg">
-				<rect id="Cursor_Area_eg" rx="0" ry="0" x="0" y="0" width="32" height="32">
-				</rect>
-			</svg>
-			<svg class="Touch_Area_eh">
-				<rect id="Touch_Area_eh" rx="0" ry="0" x="0" y="0" width="40" height="48">
-				</rect>
-			</svg>
-			<div id="Group_72883_ei">
-				<svg class="ToDelete_ej">
-					<rect id="ToDelete_ej" rx="0" ry="0" x="0" y="0" width="18" height="18">
-					</rect>
-				</svg>
-				<svg class="Ellipse_9344_ek">
-					<ellipse id="Ellipse_9344_ek" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9345_el">
-					<ellipse id="Ellipse_9345_el" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-				<svg class="Ellipse_9346_em">
-					<ellipse id="Ellipse_9346_em" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-					</ellipse>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div id="How_can_I_contribute">
-		<span>How can I contribute?</span>
-	</div>
-	<div id="Group_72930">
-		<svg class="Ellipse_8">
-			<ellipse id="Ellipse_8" rx="28" ry="28" cx="28" cy="28">
-			</ellipse>
-		</svg>
-		<svg class="Ellipse_9">
-			<ellipse id="Ellipse_9" rx="28" ry="28" cx="28" cy="28">
-			</ellipse>
-		</svg>
-		<div id="n_">
-			<span>1</span>
-		</div>
-		<div id="n__es">
-			<span>2</span>
-		</div>
-		<svg class="Rectangle_145872">
-			<rect id="Rectangle_145872" rx="4" ry="4" x="0" y="0" width="280" height="334">
-			</rect>
-		</svg>
-		<div id="Set_Up_Your_GitHub_Account">
-			<span>Set Up Your GitHub Account</span>
-		</div>
-		<div id="Create_a_GitHub_account_with_y">
-			<span>Create a GitHub account with your <br/>UST/UST-affiliate email address. Skip this<br/>step if you already have an account.</span><br/>
-		</div>
-		<svg class="Rectangle_145873">
-			<rect id="Rectangle_145873" rx="0" ry="0" x="0" y="0" width="278" height="1">
-			</rect>
-		</svg>
-		<svg class="Rectangle_145874">
-			<rect id="Rectangle_145874" rx="0" ry="0" x="0" y="0" width="232" height="1">
-			</rect>
-		</svg>
-		<div id="Group_72931">
-			<svg class="Rectangle_145875">
-				<rect id="Rectangle_145875" rx="16" ry="16" x="0" y="0" width="124" height="32">
-				</rect>
-			</svg>
-			<div id="Create_Account">
-				<span><a href="https://github.com/signup" style="color:#2A2929; text-decoration:none">Create Account</a></span>
-			</div>
-		</div>
-		<img id="Mask_Group_4" src="Mask_Group_4.png" srcset="Mask_Group_4.png 1x, Mask_Group_4@2x.png 2x">
-			
-		</svg>
-		<div id="Group_3353">
-			<div id="Action_button_e">
-				<svg class="Placement_Area_e">
-					<rect id="Placement_Area_e" rx="0" ry="0" x="0" y="0" width="32" height="32">
-					</rect>
-				</svg>
-				<svg class="Background_e">
-					<rect id="Background_e" rx="4" ry="4" x="0" y="0" width="32" height="32">
-					</rect>
-				</svg>
-				<svg class="Cursor_Area_e">
-					<rect id="Cursor_Area_e" rx="0" ry="0" x="0" y="0" width="32" height="32">
-					</rect>
-				</svg>
-				<svg class="Touch_Area_e">
-					<rect id="Touch_Area_e" rx="0" ry="0" x="0" y="0" width="40" height="48">
-					</rect>
-				</svg>
-				<div id="Group_72883_e">
-					<svg class="ToDelete_e">
-						<rect id="ToDelete_e" rx="0" ry="0" x="0" y="0" width="18" height="18">
-						</rect>
-					</svg>
-					<svg class="Ellipse_9344_fa">
-						<ellipse id="Ellipse_9344_fa" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-						</ellipse>
-					</svg>
-					<svg class="Ellipse_9345_fb">
-						<ellipse id="Ellipse_9345_fb" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-						</ellipse>
-					</svg>
-					<svg class="Ellipse_9346_fc">
-						<ellipse id="Ellipse_9346_fc" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-						</ellipse>
-					</svg>
-				</div>
-			</div>
-		</div>
-		<svg class="Rectangle_145882">
-			<rect id="Rectangle_145882" rx="4" ry="4" x="0" y="0" width="280" height="595">
-			</rect>
-		</svg>
-		<div id="n__fe">
-			<span></span><br/>
-		</div>
-		<svg class="Rectangle_145883">
-			<rect id="Rectangle_145883" rx="0" ry="0" x="0" y="0" width="278" height="1">
-			</rect>
-		</svg>
-		<svg class="Rectangle_145884">
-			<rect id="Rectangle_145884" rx="0" ry="0" x="0" y="0" width="232" height="1">
-			</rect>
-		</svg>
-		<svg class="Rectangle_145885">
-			<rect id="Rectangle_145885" rx="16" ry="16" x="0" y="0" width="124" height="32">
-			</rect>
-		</svg>
-		<div id="Send_Invite">
-			<span>Send Invite</span>
-		</div>
-		<img id="Mask_Group_6" src="Mask_Group_6.png" srcset="Mask_Group_6.png 1x, Mask_Group_6@2x.png 2x">
-			
-		</svg>
-		<div id="Group_72885">
-			<div id="Action_button_fl">
-				<svg class="Placement_Area_fm">
-					<rect id="Placement_Area_fm" rx="0" ry="0" x="0" y="0" width="32" height="32">
-					</rect>
-				</svg>
-				<svg class="Background_fn">
-					<rect id="Background_fn" rx="4" ry="4" x="0" y="0" width="32" height="32">
-					</rect>
-				</svg>
-				<svg class="Cursor_Area_fo">
-					<rect id="Cursor_Area_fo" rx="0" ry="0" x="0" y="0" width="32" height="32">
-					</rect>
-				</svg>
-				<svg class="Touch_Area_fp">
-					<rect id="Touch_Area_fp" rx="0" ry="0" x="0" y="0" width="40" height="48">
-					</rect>
-				</svg>
-				<div id="Group_72883_fq">
-					<svg class="ToDelete_fr">
-						<rect id="ToDelete_fr" rx="0" ry="0" x="0" y="0" width="18" height="18">
-						</rect>
-					</svg>
-					<svg class="Ellipse_9344_fs">
-						<ellipse id="Ellipse_9344_fs" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-						</ellipse>
-					</svg>
-					<svg class="Ellipse_9345_ft">
-						<ellipse id="Ellipse_9345_ft" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-						</ellipse>
-					</svg>
-					<svg class="Ellipse_9346_fu">
-						<ellipse id="Ellipse_9346_fu" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
-						</ellipse>
-					</svg>
-				</div>
-			</div>
-		</div>
-		<div id="Enter_Credentials">
-			<span>Enter Credentials</span>
-		</div>
-		<div id="Default" class="Default">
-			<div id="Group_Label">
-				<span>Email Address</span>
-			</div>
-			<div id="Default_fy" class="Default">
-				<div id="Group_72932">
-					<div id="Base" class="Base">
-						<svg class="InputBase">
-							<rect id="InputBase" rx="5" ry="5" x="0" y="0" width="226.5" height="38">
-							</rect>
-						</svg>
-					</div>
-					<div id="Text_State">
-						<span>U55555@ust.com</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="Default_f" class="Default">
-			<div id="Group_Label_f">
-				<span>Select Your Team (optional)</span>
-			</div>
-			<div id="Default_ga" class="Default">
-				<div id="Group_72933">
-					<div id="Base_f" class="Base">
-						<svg class="InputBase_f">
-							<rect id="InputBase_f" rx="5" ry="5" x="0" y="0" width="226" height="38">
-							</rect>
-						</svg>
-					</div>
-					<div id="double_caret" class="double_caret">
-						<svg class="base">
-							<rect id="base" rx="0" ry="0" x="0" y="0" width="15" height="15">
-							</rect>
-						</svg>
-						<svg class="select" viewBox="3886.877 524.493 8.612 4.371">
-							<path id="select" d="M 3886.877197265625 524.4929809570312 L 3891.265869140625 528.8643188476562 L 3895.4892578125 524.4929809570312">
-							</path>
-						</svg>
-					</div>
-					<div id="Label">
-						<span>Default Select</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="Type_in_your_USTUST-affiliate_">
-			<span>Type in your UST/UST-affiliate email<br/>address and select a team you would<br/>like to join. After account verification,<br/>we will send you an email invite. <br/><br/>Welcome to the UST Solution Factory<br/>organization.<br/></span><br/>
-		</div>
-		<img id="email" src="email.png" srcset="email.png 1x, email@2x.png 2x">
-			
-		<div id="Join_our_GitHub_organization">
-			<span>Join our GitHub organization</span>
-		</div>
-	</div>
-	<div id="n_2022_UST_PACE_Solution_Hub_v">
-		<span>© 2022, UST PACE Solution Hub v0.3</span>
-	</div>
-	<div id="Social_-_Follow_Wireframe">
-		<div id="Follow_us">
-			<span>Follow us</span>
-		</div>
-		<div id="Icon_-_Facebook">
-			<svg class="background">
-				<rect id="background" rx="4" ry="4" x="0" y="0" width="40" height="40">
-				</rect>
-			</svg>
-			<div id="icons">
-				<svg class="facebook-176" viewBox="329 7239 10 20">
-					<path id="facebook-176" d="M 335.8212890625 7259 L 335.8212890625 7250 L 338.5536804199219 7250 L 339 7246 L 335.8212890625 7246 L 335.8212890625 7244.0517578125 C 335.8212890625 7243.02197265625 335.8475952148438 7242 337.2868957519531 7242 L 338.7446899414062 7242 L 338.7446899414062 7239.14013671875 C 338.7446899414062 7239.09716796875 337.4924926757812 7239 336.2256774902344 7239 C 333.5800170898438 7239 331.9234008789062 7240.6572265625 331.9234008789062 7243.7001953125 L 331.9234008789062 7246 L 329 7246 L 329 7250 L 331.9234008789062 7250 L 331.9234008789062 7259 L 335.8212890625 7259 Z">
-					</path>
-				</svg>
-			</div>
-		</div>
-		<div id="Icon_-_Instagram">
-			<svg class="background_go">
-				<rect id="background_go" rx="4" ry="4" x="0" y="0" width="40" height="40">
-				</rect>
-			</svg>
-			<div id="icons_gp">
-				<svg class="instagram-167" viewBox="284 7279 20 20">
-					<path id="instagram-167" d="M 289.8696594238281 7279.12255859375 C 288.2417602539062 7279.1962890625 286.830810546875 7279.59423828125 285.6914978027344 7280.728515625 C 284.5481872558594 7281.869140625 284.1551513671875 7283.28564453125 284.0815124511719 7284.896484375 C 284.0357360839844 7285.90185546875 283.76806640625 7293.498046875 284.5442199707031 7295.490234375 C 285.0675964355469 7296.833984375 286.0984497070312 7297.86767578125 287.4546813964844 7298.392578125 C 288.0875244140625 7298.638671875 288.8099365234375 7298.8056640625 289.8696594238281 7298.85400390625 C 298.73046875 7299.2548828125 302.0150756835938 7299.03662109375 303.4001770019531 7295.490234375 C 303.6459655761719 7294.85888671875 303.8151245117188 7294.13720703125 303.8618774414062 7293.080078125 C 304.266845703125 7284.19677734375 303.7962036132812 7282.27099609375 302.2519226074219 7280.728515625 C 301.0270080566406 7279.5068359375 299.5862121582031 7278.67529296875 289.8696594238281 7279.12255859375 M 289.9512329101562 7297.0673828125 C 288.9810791015625 7297.02392578125 288.4547119140625 7296.86181640625 288.1034545898438 7296.72607421875 C 287.2198791503906 7296.3828125 286.5561828613281 7295.7216796875 286.2148742675781 7294.84326171875 C 285.6238098144531 7293.32958984375 285.8198547363281 7286.14013671875 285.8725891113281 7284.97705078125 C 285.92431640625 7283.83740234375 286.1551818847656 7282.79638671875 286.9591674804688 7281.9921875 C 287.9541931152344 7280.99951171875 289.2398071289062 7280.51318359375 297.9931335449219 7280.908203125 C 299.1354370117188 7280.9599609375 300.1792297363281 7281.1904296875 300.9852294921875 7281.9921875 C 301.9802551269531 7282.98486328125 302.4738159179688 7284.2802734375 302.0718078613281 7293 C 302.0280151367188 7293.9677734375 301.8658447265625 7294.49267578125 301.7295227050781 7294.84326171875 C 300.8290100097656 7297.15087890625 298.75732421875 7297.4716796875 289.9512329101562 7297.0673828125 M 298.0896606445312 7283.689453125 C 298.0896606445312 7284.3466796875 298.6239929199219 7284.880859375 299.2837219238281 7284.880859375 C 299.9434204101562 7284.880859375 300.478759765625 7284.3466796875 300.478759765625 7283.689453125 C 300.478759765625 7283.03271484375 299.9434204101562 7282.49853515625 299.2837219238281 7282.49853515625 C 298.6239929199219 7282.49853515625 298.0896606445312 7283.03271484375 298.0896606445312 7283.689453125 M 288.8626708984375 7288.98779296875 C 288.8626708984375 7291.802734375 291.1502685546875 7294.0849609375 293.9721984863281 7294.0849609375 C 296.7941284179688 7294.0849609375 299.0817260742188 7291.802734375 299.0817260742188 7288.98779296875 C 299.0817260742188 7286.1728515625 296.7941284179688 7283.89208984375 293.9721984863281 7283.89208984375 C 291.1502685546875 7283.89208984375 288.8626708984375 7286.1728515625 288.8626708984375 7288.98779296875 M 290.6557312011719 7288.98779296875 C 290.6557312011719 7287.16162109375 292.1403198242188 7285.6796875 293.9721984863281 7285.6796875 C 295.8040466308594 7285.6796875 297.2886657714844 7287.16162109375 297.2886657714844 7288.98779296875 C 297.2886657714844 7290.8154296875 295.8040466308594 7292.29736328125 293.9721984863281 7292.29736328125 C 292.1403198242188 7292.29736328125 290.6557312011719 7290.8154296875 290.6557312011719 7288.98779296875">
-					</path>
-				</svg>
-			</div>
-		</div>
-		<div id="Icon_-_Twitter">
-			<svg class="background_gs">
-				<rect id="background_gs" rx="4" ry="4" x="0" y="0" width="40" height="40">
-				</rect>
-			</svg>
-			<div id="icons_gt">
-				<svg class="twitter-154" viewBox="4 7361 20 16">
-					<path id="twitter-154" d="M 10.28999996185303 7377 C 17.83699989318848 7377 21.96500015258789 7370.84375 21.96500015258789 7365.50537109375 C 21.96500015258789 7365.330078125 21.96500015258789 7365.15576171875 21.95299911499023 7364.98291015625 C 22.75600051879883 7364.41162109375 23.44899940490723 7363.70263671875 24 7362.8916015625 C 23.25200080871582 7363.21826171875 22.45700073242188 7363.43310546875 21.64399909973145 7363.52734375 C 22.5 7363.0224609375 23.14100074768066 7362.22900390625 23.44799995422363 7361.29248046875 C 22.64200019836426 7361.76318359375 21.76099967956543 7362.09521484375 20.84199905395508 7362.2734375 C 19.28800010681152 7360.64697265625 16.68899917602539 7360.56787109375 15.03600025177002 7362.09814453125 C 13.9709997177124 7363.08447265625 13.51799964904785 7364.55517578125 13.84899997711182 7365.95849609375 C 10.55000019073486 7365.794921875 7.47599983215332 7364.26123046875 5.392000198364258 7361.73779296875 C 4.302999973297119 7363.58349609375 4.860000133514404 7365.9443359375 6.663000106811523 7367.1298828125 C 6.010000228881836 7367.111328125 5.370999813079834 7366.93798828125 4.800000190734863 7366.625 L 4.800000190734863 7366.67626953125 C 4.801000118255615 7368.59912109375 6.177999973297119 7370.2548828125 8.092000007629395 7370.6357421875 C 7.48799991607666 7370.79833984375 6.854000091552734 7370.82177734375 6.239999771118164 7370.70458984375 C 6.776999950408936 7372.35107421875 8.317999839782715 7373.478515625 10.07299995422363 7373.5107421875 C 8.619999885559082 7374.63525390625 6.824999809265137 7375.24560546875 4.97700023651123 7375.24365234375 C 4.651000022888184 7375.24267578125 4.324999809265137 7375.22412109375 4 7375.185546875 C 5.876999855041504 7376.37109375 8.060000419616699 7377 10.28999996185303 7376.9970703125">
-					</path>
-				</svg>
-			</div>
 		</div>
 	</div>
 	<div id="Group_72928">
@@ -7196,136 +6654,749 @@ window.application = new Application();
 			<span>Google Cloud Platform</span>
 		</div>
 	</div>
-	<svg class="Rectangle_145788">
-		<rect id="Rectangle_145788" rx="0" ry="0" x="0" y="0" width="190" height="0">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145790">
-		<rect id="Rectangle_145790" rx="0" ry="0" x="0" y="0" width="188" height="0">
-		</rect>
-	</svg>
-	<div id="See_details">
-		<span>See details</span>
-	</div>
-	<div id="See_details_g">
-		<span>See details</span>
-	</div>
-	<div id="See_details_ha">
-		<span>See details</span>
-	</div>
-	<div id="See_details_hb">
-		<span>See details</span>
-	</div>
-	<div id="See_details_hc">
-		<span>See details</span>
-	</div>
-	<div id="Group_72929">
-		<svg class="Path_175" viewBox="0 0 1777.564 265.346">
-			<path id="Path_175" d="M 0 0 L 1777.564086914062 4.985607128418605e-14 L 1236.6494140625 265.3462524414062 L 9.618065892336158e-15 264.3842468261719 L 0 0 Z">
-			</path>
+	<div id="Group_72937">
+		<svg class="Rectangle_145799">
+			<rect id="Rectangle_145799" rx="4" ry="4" x="0" y="0" width="264" height="305">
+			</rect>
 		</svg>
-		<div id="Collaborate_with_fellow_UST_em">
-			<span>Collaborate with fellow UST employees to discuss, develop, and publish new projects.</span>
+		<div id="Technical_Documentation">
+			<span>Technical Documentation</span>
 		</div>
-		<div id="Join_our_community_of_develope">
-			<span>Join our community of developers.</span>
+		<img id="techincal_documentation" src="techincal_documentation.png" srcset="techincal_documentation.png 1x, techincal_documentation@2x.png 2x">
+			
+		<div id="Access_clear_detailed_and_conc">
+			<span>Access clear, detailed, and<br/>concise technical <br/>documentation to get your<br/>product up and running<br/>quickly.<br/><br/><br/></span><br/>
 		</div>
-		<div id="wireframe-button-standard" class="wireframe_button_standard">
-			<svg class="background_hi">
-				<rect id="background_hi" rx="4" ry="4" x="0" y="0" width="238" height="40">
-				</rect>
-			</svg>
-			<div id="Join_our_GitHub_organization_hj">
-				<span><a href="#Join_our_GitHub_organization" style="color:#2A2929; text-decoration:none;">Join our GitHub organization</a></span>
+		<svg class="Rectangle_145800">
+			<rect id="Rectangle_145800" rx="4" ry="4" x="0" y="0" width="264" height="305">
+			</rect>
+		</svg>
+		<div id="Use_Cases">
+			<span>Use Cases</span>
+		</div>
+		<img id="use-case" src="use-case.png" srcset="use-case.png 1x, use-case@2x.png 2x">
+			
+		<div id="Explore_use_cases_to_see_how_M">
+			<span>Explore use cases to see<br/>how Marketplace and its<br/>products can help you <br/>find solutions to your<br/>problems.<br/><br/><br/></span><br/>
+		</div>
+		<svg class="Rectangle_145801">
+			<rect id="Rectangle_145801" rx="4" ry="4" x="0" y="0" width="264" height="305">
+			</rect>
+		</svg>
+		<div id="Backlogs">
+			<span>Backlogs</span>
+		</div>
+		<img id="backlog" src="backlog.png" srcset="backlog.png 1x, backlog@2x.png 2x">
+			
+		<div id="Browse_through_backlogs__to_fi">
+			<span>Browse through backlogs <br/>to find out what new <br/>products are being <br/>developed, and where<br/>you can contribute.<br/><br/><br/></span><br/>
+		</div>
+		<svg class="Rectangle_145802">
+			<rect id="Rectangle_145802" rx="4" ry="4" x="0" y="0" width="264" height="305">
+			</rect>
+		</svg>
+		<div id="Discussion_Boards">
+			<span>Discussion Boards</span>
+		</div>
+		<img id="discussion" src="discussion.png" srcset="discussion.png 1x, discussion@2x.png 2x">
+			
+		<div id="Observe_and_participate__in_di">
+			<span>Observe and participate <br/>in discussion boards to <br/>collaboratively<br/>create and evolve ideas<br/>into products.<br/><br/><br/><br/></span><br/>
+		</div>
+		<div id="Community">
+			<span>Community</span>
+		</div>
+		<svg class="Rectangle_145517">
+			<rect id="Rectangle_145517" rx="4" ry="4" x="0" y="0" width="360" height="104">
+			</rect>
+		</svg>
+		<div id="Talk_about_ideas_for_new_featu">
+			<span>Talk about ideas for new features or asset by creating a discussion at the organization or repository level.</span>
+		</div>
+		<svg class="Rectangle_145519">
+			<rect id="Rectangle_145519" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145899">
+			<rect id="Rectangle_145899" rx="4" ry="4" x="0" y="0" width="360" height="126">
+			</rect>
+		</svg>
+		<div id="Share_your_thoughts_about_an_a">
+			<span>Share your thoughts about an asset by participating its discussion board. Tag members or teams in your comments, attach files or code snippets. </span>
+		</div>
+		<svg class="Rectangle_145901">
+			<rect id="Rectangle_145901" rx="0" ry="0" x="0" y="0" width="1" height="125">
+			</rect>
+		</svg>
+		<div id="Group_72890">
+			<div id="Action_button">
+				<svg class="Placement_Area">
+					<rect id="Placement_Area" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Background_cf">
+					<rect id="Background_cf" rx="4" ry="4" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Cursor_Area">
+					<rect id="Cursor_Area" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Touch_Area">
+					<rect id="Touch_Area" rx="0" ry="0" x="0" y="0" width="40" height="48">
+					</rect>
+				</svg>
+				<div id="Group_72883">
+					<svg class="ToDelete">
+						<rect id="ToDelete" rx="0" ry="0" x="0" y="0" width="18" height="18">
+						</rect>
+					</svg>
+					<svg class="Ellipse_9344">
+						<ellipse id="Ellipse_9344" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9345">
+						<ellipse id="Ellipse_9345" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9346">
+						<ellipse id="Ellipse_9346" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="Group_72935">
-		<svg class="Path_174" viewBox="0 0 1767.51 292.184">
-			<path id="Path_174" d="M 0 0 L 1767.51025390625 0 L 1221.219482421875 292.1844482421875 L 0 292.1844482421875 L 0 0 Z">
-			</path>
+		<div id="Suggestions_or_concerns">
+			<span>Suggestions or concerns?</span>
+		</div>
+		<svg class="Rectangle_145902">
+			<rect id="Rectangle_145902" rx="4" ry="4" x="0" y="0" width="360" height="104">
+			</rect>
 		</svg>
-		<div id="A_vast_catalog_of_high-quality">
-			<span>A vast catalog of high-quality reusable components built by UST developers. At your fingertips.</span><br/>
+		<div id="Follow_Discussions">
+			<span>Follow Discussions.</span>
 		</div>
-		<div id="Welcome_to_UST_PACE_Solution_H">
-			<span>Welcome to UST PACE Solution Hub</span>
+		<div id="Find_a_discussion_that_interes">
+			<span>Find a discussion that interests you? <br/>Subscribe to the discussion to receive notifications.</span>
 		</div>
-		<div id="wireframe-button-standard_ho" class="wireframe_button_standard">
-			<svg class="background_hp">
-				<rect id="background_hp" rx="4" ry="4" x="0" y="0" width="133" height="40">
-				</rect>
-			</svg>
-			<div id="Explore_assets">
-				<span><a href="https://dev-marketplace.dagility.com/#/products?page=0&pageSize=10&sort=name,asc" style="color:#2A2929; text-decoration:none;">Explore assets</a></span>
+		<svg class="Rectangle_145904">
+			<rect id="Rectangle_145904" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145905">
+			<rect id="Rectangle_145905" rx="4" ry="4" x="0" y="0" width="360" height="126">
+			</rect>
+		</svg>
+		<div id="Create_backlog_items">
+			<span>Create backlog items.</span>
+		</div>
+		<div id="Turn_a_discussion_into_a_backl">
+			<span>Turn a discussion into a backlog item by creating an issue from a discussion. Assign the issue to your team’s project board.</span>
+		</div>
+		<svg class="Rectangle_145907">
+			<rect id="Rectangle_145907" rx="0" ry="0" x="0" y="0" width="1" height="125">
+			</rect>
+		</svg>
+		<div id="Group_72892">
+			<div id="Action_button_cx">
+				<svg class="Placement_Area_cy">
+					<rect id="Placement_Area_cy" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Background_cz">
+					<rect id="Background_cz" rx="4" ry="4" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Cursor_Area_c">
+					<rect id="Cursor_Area_c" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Touch_Area_c">
+					<rect id="Touch_Area_c" rx="0" ry="0" x="0" y="0" width="40" height="48">
+					</rect>
+				</svg>
+				<div id="Group_72883_c">
+					<svg class="ToDelete_c">
+						<rect id="ToDelete_c" rx="0" ry="0" x="0" y="0" width="18" height="18">
+						</rect>
+					</svg>
+					<svg class="Ellipse_9344_c">
+						<ellipse id="Ellipse_9344_c" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9345_c">
+						<ellipse id="Ellipse_9345_c" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9346_c">
+						<ellipse id="Ellipse_9346_c" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+				</div>
 			</div>
 		</div>
-		<div id="wireframe-button-standard_hr" class="wireframe_button_standard">
-			<svg class="background_hs">
-				<rect id="background_hs" rx="4" ry="4" x="0" y="0" width="256" height="40">
-				</rect>
-			</svg>
-			<div id="Learn_more_about_Solution_Hub">
-				<span><a href="https://brendon2020.github.io/solution-hub-docs/docs/about/about.html" style="color:#2A2929; text-decoration:none">Learn more about Solution Hub</a></span>
+		<svg class="Rectangle_145908">
+			<rect id="Rectangle_145908" rx="4" ry="4" x="0" y="0" width="360" height="104">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145910">
+			<rect id="Rectangle_145910" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<div id="Group_72893">
+			<div id="Action_button_da">
+				<svg class="Placement_Area_db">
+					<rect id="Placement_Area_db" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Background_dc">
+					<rect id="Background_dc" rx="4" ry="4" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Cursor_Area_dd">
+					<rect id="Cursor_Area_dd" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Touch_Area_de">
+					<rect id="Touch_Area_de" rx="0" ry="0" x="0" y="0" width="40" height="48">
+					</rect>
+				</svg>
+				<div id="Group_72883_df">
+					<svg class="ToDelete_dg">
+						<rect id="ToDelete_dg" rx="0" ry="0" x="0" y="0" width="18" height="18">
+						</rect>
+					</svg>
+					<svg class="Ellipse_9344_dh">
+						<ellipse id="Ellipse_9344_dh" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9345_di">
+						<ellipse id="Ellipse_9345_di" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9346_dj">
+						<ellipse id="Ellipse_9346_dj" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+				</div>
 			</div>
 		</div>
-	</div>
-	<svg class="Rectangle_145924">
-		<rect id="Rectangle_145924" rx="0" ry="0" x="0" y="0" width="191" height="0">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145926">
-		<rect id="Rectangle_145926" rx="0" ry="0" x="0" y="0" width="191" height="0">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145932">
-		<rect id="Rectangle_145932" rx="0" ry="0" x="0" y="0" width="192" height="0">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145935">
-		<rect id="Rectangle_145935" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145937">
-		<rect id="Rectangle_145937" rx="0" ry="0" x="0" y="0" width="1" height="125">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145939">
-		<rect id="Rectangle_145939" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145941">
-		<rect id="Rectangle_145941" rx="0" ry="0" x="0" y="0" width="1" height="125">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145943">
-		<rect id="Rectangle_145943" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145945">
-		<rect id="Rectangle_145945" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145947">
-		<rect id="Rectangle_145947" rx="0" ry="0" x="0" y="0" width="1" height="103">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145948">
-		<rect id="Rectangle_145948" rx="0" ry="0" x="0" y="0" width="190" height="0">
-		</rect>
-	</svg>
-	<svg class="Rectangle_145949">
-		<rect id="Rectangle_145949" rx="0" ry="0" x="0" y="0" width="188" height="0">
-		</rect>
-	</svg>
-	<div id="Header">
-		<svg class="Path_176" viewBox="0 0 1920 90">
-			<path id="Path_176" d="M 0 0 L 1920 0 L 1920 90 L 0 90 L 0 0 Z">
-			</path>
+		<div id="Share_your_ideas">
+			<span>Share your ideas.</span>
+		</div>
+		<svg class="Rectangle_145913">
+			<rect id="Rectangle_145913" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
 		</svg>
-		<a href="#top">
-			<img id="SolutionHub-Wide" src="SolutionHub-Wide.png" srcset="SolutionHub-Wide.png 1x, SolutionHub-Wide@2x.png 2x">
-		</a>
+		<div id="Initiate_a_repository">
+			<span>Initiate a repository.</span>
+		</div>
+		<div id="Create_a_repository_for_an_uni">
+			<span>Create a repository for an uninitialized backlog item and assign them to your team to begin working on.</span>
+		</div>
+		<svg class="Rectangle_145914">
+			<rect id="Rectangle_145914" rx="4" ry="4" x="0" y="0" width="360" height="104">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145916">
+			<rect id="Rectangle_145916" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<div id="Group_72895">
+			<div id="Action_button_dr">
+				<svg class="Placement_Area_ds">
+					<rect id="Placement_Area_ds" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Background_dt">
+					<rect id="Background_dt" rx="4" ry="4" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Cursor_Area_du">
+					<rect id="Cursor_Area_du" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Touch_Area_dv">
+					<rect id="Touch_Area_dv" rx="0" ry="0" x="0" y="0" width="40" height="48">
+					</rect>
+				</svg>
+				<div id="Group_72883_dw">
+					<svg class="ToDelete_dx">
+						<rect id="ToDelete_dx" rx="0" ry="0" x="0" y="0" width="18" height="18">
+						</rect>
+					</svg>
+					<svg class="Ellipse_9344_dy">
+						<ellipse id="Ellipse_9344_dy" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9345_dz">
+						<ellipse id="Ellipse_9345_dz" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9346_d">
+						<ellipse id="Ellipse_9346_d" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="Contribute_to_a_repository">
+			<span>Contribute to a repository.</span>
+		</div>
+		<div id="Write_code_Discuss_repository-">
+			<span>Write code. Discuss repository-specific topics in the repository’s very own “Discussions” tab.</span>
+		</div>
+		<div id="Group_72896">
+			<div id="Action_button_d">
+				<svg class="Placement_Area_d">
+					<rect id="Placement_Area_d" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Background_d">
+					<rect id="Background_d" rx="4" ry="4" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Cursor_Area_d">
+					<rect id="Cursor_Area_d" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Touch_Area_d">
+					<rect id="Touch_Area_d" rx="0" ry="0" x="0" y="0" width="40" height="48">
+					</rect>
+				</svg>
+				<div id="Group_72883_d">
+					<svg class="ToDelete_ea">
+						<rect id="ToDelete_ea" rx="0" ry="0" x="0" y="0" width="18" height="18">
+						</rect>
+					</svg>
+					<svg class="Ellipse_9344_eb">
+						<ellipse id="Ellipse_9344_eb" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9345_ec">
+						<ellipse id="Ellipse_9345_ec" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9346_ed">
+						<ellipse id="Ellipse_9346_ed" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<img id="ideas" src="ideas.png" srcset="ideas.png 1x, ideas@2x.png 2x">
+			
+		<img id="suggestions" src="suggestions.png" srcset="suggestions.png 1x, suggestions@2x.png 2x">
+			
+		<img id="follow" src="follow.png" srcset="follow.png 1x, follow@2x.png 2x">
+			
+		<img id="repository" src="repository.png" srcset="repository.png 1x, repository@2x.png 2x">
+			
+		<img id="kanban" src="kanban.png" srcset="kanban.png 1x, kanban@2x.png 2x">
+			
+		<img id="code" src="code.png" srcset="code.png 1x, code@2x.png 2x">
+			
+		<div id="Group_72891">
+			<div id="Action_button_el">
+				<svg class="Placement_Area_em">
+					<rect id="Placement_Area_em" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Background_en">
+					<rect id="Background_en" rx="4" ry="4" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Cursor_Area_eo">
+					<rect id="Cursor_Area_eo" rx="0" ry="0" x="0" y="0" width="32" height="32">
+					</rect>
+				</svg>
+				<svg class="Touch_Area_ep">
+					<rect id="Touch_Area_ep" rx="0" ry="0" x="0" y="0" width="40" height="48">
+					</rect>
+				</svg>
+				<div id="Group_72883_eq">
+					<svg class="ToDelete_er">
+						<rect id="ToDelete_er" rx="0" ry="0" x="0" y="0" width="18" height="18">
+						</rect>
+					</svg>
+					<svg class="Ellipse_9344_es">
+						<ellipse id="Ellipse_9344_es" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9345_et">
+						<ellipse id="Ellipse_9345_et" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_9346_eu">
+						<ellipse id="Ellipse_9346_eu" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+						</ellipse>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="How_can_I_contribute">
+			<span>How can I contribute?</span>
+		</div>
+		<div id="Group_72930">
+			<svg class="Ellipse_8">
+				<ellipse id="Ellipse_8" rx="28" ry="28" cx="28" cy="28">
+				</ellipse>
+			</svg>
+			<svg class="Ellipse_9">
+				<ellipse id="Ellipse_9" rx="28" ry="28" cx="28" cy="28">
+				</ellipse>
+			</svg>
+			<div id="n_">
+				<span>1</span>
+			</div>
+			<div id="n__e">
+				<span>2</span>
+			</div>
+			<svg class="Rectangle_145872">
+				<rect id="Rectangle_145872" rx="4" ry="4" x="0" y="0" width="280" height="334">
+				</rect>
+			</svg>
+			<div id="Set_Up_Your_GitHub_Account">
+				<span>Set Up Your GitHub Account</span>
+			</div>
+			<div id="Create_a_GitHub_account_with_y">
+				<span>Create a GitHub account with your <br/>UST/UST-affiliate email address. Skip this<br/>step if you already have an account.</span><br/>
+			</div>
+			<svg class="Rectangle_145873">
+				<rect id="Rectangle_145873" rx="0" ry="0" x="0" y="0" width="278" height="1">
+				</rect>
+			</svg>
+			<svg class="Rectangle_145874">
+				<rect id="Rectangle_145874" rx="0" ry="0" x="0" y="0" width="232" height="1">
+				</rect>
+			</svg>
+			<div class="glow-on-hover" id="Group_72931">
+				<svg class="Rectangle_145875">
+					<rect id="Rectangle_145875" rx="16" ry="16" x="0" y="0" width="124" height="32">
+					</rect>
+				</svg>
+				<div id="Create_Account">
+					<span><a href="https://github.com/signup" style="color:#2A2929; text-decoration:none">Create Account</a></span>
+				</div>
+			</div>
+			<img id="Mask_Group_4" src="Mask_Group_4.png" srcset="Mask_Group_4.png 1x, Mask_Group_4@2x.png 2x">
+				
+			</svg>
+			<div id="Group_3353">
+				<div id="Action_button_fb">
+					<svg class="Placement_Area_fc">
+						<rect id="Placement_Area_fc" rx="0" ry="0" x="0" y="0" width="32" height="32">
+						</rect>
+					</svg>
+					<svg class="Background_fd">
+						<rect id="Background_fd" rx="4" ry="4" x="0" y="0" width="32" height="32">
+						</rect>
+					</svg>
+					<svg class="Cursor_Area_fe">
+						<rect id="Cursor_Area_fe" rx="0" ry="0" x="0" y="0" width="32" height="32">
+						</rect>
+					</svg>
+					<svg class="Touch_Area_ff">
+						<rect id="Touch_Area_ff" rx="0" ry="0" x="0" y="0" width="40" height="48">
+						</rect>
+					</svg>
+					<div id="Group_72883_fg">
+						<svg class="ToDelete_fh">
+							<rect id="ToDelete_fh" rx="0" ry="0" x="0" y="0" width="18" height="18">
+							</rect>
+						</svg>
+						<svg class="Ellipse_9344_fi">
+							<ellipse id="Ellipse_9344_fi" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+							</ellipse>
+						</svg>
+						<svg class="Ellipse_9345_fj">
+							<ellipse id="Ellipse_9345_fj" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+							</ellipse>
+						</svg>
+						<svg class="Ellipse_9346_fk">
+							<ellipse id="Ellipse_9346_fk" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+							</ellipse>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<svg class="Rectangle_145882">
+				<rect id="Rectangle_145882" rx="4" ry="4" x="0" y="0" width="280" height="595">
+				</rect>
+			</svg>
+			<div id="n__fm">
+				<span></span><br/>
+			</div>
+			<svg class="Rectangle_145883">
+				<rect id="Rectangle_145883" rx="0" ry="0" x="0" y="0" width="278" height="1">
+				</rect>
+			</svg>
+			<svg class="Rectangle_145884">
+				<rect id="Rectangle_145884" rx="0" ry="0" x="0" y="0" width="232" height="1">
+				</rect>
+			</svg>
+			<svg class="Rectangle_145885">
+				<rect id="Rectangle_145885" rx="16" ry="16" x="0" y="0" width="124" height="32">
+				</rect>
+			</svg>
+			<div id="Send_Invite">
+				<span>Send Invite</span>
+			</div>
+			<img id="Mask_Group_6" src="Mask_Group_6.png" srcset="Mask_Group_6.png 1x, Mask_Group_6@2x.png 2x">
+				
+			</svg>
+			<div id="Group_72885">
+				<div id="Action_button_ft">
+					<svg class="Placement_Area_fu">
+						<rect id="Placement_Area_fu" rx="0" ry="0" x="0" y="0" width="32" height="32">
+						</rect>
+					</svg>
+					<svg class="Background_fv">
+						<rect id="Background_fv" rx="4" ry="4" x="0" y="0" width="32" height="32">
+						</rect>
+					</svg>
+					<svg class="Cursor_Area_fw">
+						<rect id="Cursor_Area_fw" rx="0" ry="0" x="0" y="0" width="32" height="32">
+						</rect>
+					</svg>
+					<svg class="Touch_Area_fx">
+						<rect id="Touch_Area_fx" rx="0" ry="0" x="0" y="0" width="40" height="48">
+						</rect>
+					</svg>
+					<div id="Group_72883_fy">
+						<svg class="ToDelete_fz">
+							<rect id="ToDelete_fz" rx="0" ry="0" x="0" y="0" width="18" height="18">
+							</rect>
+						</svg>
+						<svg class="Ellipse_9344_f">
+							<ellipse id="Ellipse_9344_f" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+							</ellipse>
+						</svg>
+						<svg class="Ellipse_9345_f">
+							<ellipse id="Ellipse_9345_f" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+							</ellipse>
+						</svg>
+						<svg class="Ellipse_9346_f">
+							<ellipse id="Ellipse_9346_f" rx="1.899999976158142" ry="1.899999976158142" cx="1.899999976158142" cy="1.899999976158142">
+							</ellipse>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Enter_Credentials">
+				<span>Enter Credentials</span>
+			</div>
+			<div id="Default" class="Default">
+				<div id="Group_Label">
+					<span>Email Address</span>
+				</div>
+				<div id="Default_f" class="Default">
+					<div id="Group_72932">
+						<div id="Base" class="Base">
+							<svg class="InputBase">
+								<rect id="InputBase" rx="5" ry="5" x="0" y="0" width="226.5" height="38">
+								</rect>
+							</svg>
+						</div>
+						<div id="Text_State">
+							<span>U55555@ust.com</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Default_gb" class="Default">
+				<div id="Group_Label_gc">
+					<span>Select Your Team (optional)</span>
+				</div>
+				<div id="Default_gd" class="Default">
+					<div id="Group_72933">
+						<div id="Base_gf" class="Base">
+							<svg class="InputBase_gg">
+								<rect id="InputBase_gg" rx="5" ry="5" x="0" y="0" width="226" height="38">
+								</rect>
+							</svg>
+						</div>
+						<div id="double_caret" class="double_caret">
+							<svg class="base">
+								<rect id="base" rx="0" ry="0" x="0" y="0" width="15" height="15">
+								</rect>
+							</svg>
+							<svg class="select" viewBox="3886.877 524.493 8.612 4.371">
+								<path id="select" d="M 3886.877197265625 524.4929809570312 L 3891.265869140625 528.8643188476562 L 3895.4892578125 524.4929809570312">
+								</path>
+							</svg>
+						</div>
+						<div id="Label">
+							<span>Default Select</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Type_in_your_USTUST-affiliate_">
+				<span>Type in your UST/UST-affiliate email<br/>address and select a team you would<br/>like to join. After account verification,<br/>we will send you an email invite. <br/><br/>Welcome to the UST Solution Factory<br/>organization.<br/></span><br/>
+			</div>
+			<img id="email" src="email.png" srcset="email.png 1x, email@2x.png 2x">
+				
+			<div id="Join_our_GitHub_organization_gn">
+				<span>Join our GitHub organization</span>
+			</div>
+		</div>
+		<svg class="Rectangle_145935">
+			<rect id="Rectangle_145935" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145937">
+			<rect id="Rectangle_145937" rx="0" ry="0" x="0" y="0" width="1" height="125">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145939">
+			<rect id="Rectangle_145939" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145941">
+			<rect id="Rectangle_145941" rx="0" ry="0" x="0" y="0" width="1" height="125">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145943">
+			<rect id="Rectangle_145943" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145945">
+			<rect id="Rectangle_145945" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145947">
+			<rect id="Rectangle_145947" rx="0" ry="0" x="0" y="0" width="1" height="103">
+			</rect>
+		</svg>
+	</div>
+	<div id="Group_72936">
+		<div id="Most_Popular_Products">
+			<span>Most Popular Products</span>
+		</div>
+		<svg class="Rectangle_145786">
+			<rect id="Rectangle_145786" rx="4" ry="4" x="0" y="0" width="213" height="283">
+			</rect>
+		</svg>
+		<div id="Alpine_Base_Image_315">
+			<span>Alpine Base Image 3.15</span>
+		</div>
+		<div id="A_security-hardened_Alpine_ima">
+			<span>A security-hardened Alpine image.</span>
+		</div>
+		<img id="alpine" src="alpine.png" srcset="alpine.png 1x, alpine@2x.png 2x">
+			
+		<svg class="Rectangle_145789">
+			<rect id="Rectangle_145789" rx="4" ry="4" x="0" y="0" width="212" height="283">
+			</rect>
+		</svg>
+		<div id="GitLab_CI_Maven">
+			<span>GitLab CI Maven</span>
+		</div>
+		<div id="DevSecOps_enabled_CI_Gitlab_pi">
+			<span>DevSecOps enabled CI Gitlab pipelines for Maven builds. Consists of various stages and scanning methods to ensure maximum security.</span>
+		</div>
+		<img id="gitlab" src="gitlab.png" srcset="gitlab.png 1x, gitlab@2x.png 2x">
+			
+		<svg class="Rectangle_145793">
+			<rect id="Rectangle_145793" rx="4" ry="4" x="0" y="0" width="211" height="283">
+			</rect>
+		</svg>
+		<div id="Nodejs_Base_Image">
+			<span>Node.js Base Image</span>
+		</div>
+		<div id="A_security_hardened_Nodejs_ima">
+			<span>A security hardened Node.js image.</span>
+		</div>
+		<svg class="Rectangle_145794">
+			<rect id="Rectangle_145794" rx="0" ry="0" x="0" y="0" width="177" height="0">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145797">
+			<rect id="Rectangle_145797" rx="4" ry="4" x="0" y="0" width="212" height="283">
+			</rect>
+		</svg>
+		<div id="Web_Server_Manager">
+			<span>Web Server Manager</span>
+		</div>
+		<div id="A_web_server_tool_for_informat">
+			<span>A web server tool for information management and maintenance, performing functions such as entity tracing and URL authority identification.</span>
+		</div>
+		<svg class="Rectangle_145798">
+			<rect id="Rectangle_145798" rx="0" ry="0" x="0" y="0" width="177" height="0">
+			</rect>
+		</svg>
+		<img id="node-js" src="node-js.png" srcset="node-js.png 1x, node-js@2x.png 2x">
+			
+		<img id="java" src="java.png" srcset="java.png 1x, java@2x.png 2x">
+			
+		<svg class="Rectangle_145795">
+			<rect id="Rectangle_145795" rx="4" ry="4" x="0" y="0" width="212" height="283">
+			</rect>
+		</svg>
+		<div id="Jenkins_CI_Maven">
+			<span>Jenkins CI Maven</span>
+		</div>
+		<div id="DevSecOps_enabled_CI_Jenkins_p">
+			<span>DevSecOps enabled CI Jenkins pipelines for Maven builds. Consists of various stages and scanning methods to ensure maximum security.</span>
+		</div>
+		<svg class="Rectangle_145796">
+			<rect id="Rectangle_145796" rx="0" ry="0" x="0" y="0" width="177" height="0">
+			</rect>
+		</svg>
+		<img id="jenkins" src="jenkins.png" srcset="jenkins.png 1x, jenkins@2x.png 2x">
+			
+		<svg class="Rectangle_145788">
+			<rect id="Rectangle_145788" rx="0" ry="0" x="0" y="0" width="176" height="0">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145790">
+			<rect id="Rectangle_145790" rx="0" ry="0" x="0" y="0" width="174" height="0">
+			</rect>
+		</svg>
+		<div id="See_details">
+			<span>See details</span>
+		</div>
+		<div id="See_details_hn">
+			<span>See details</span>
+		</div>
+		<div id="See_details_ho">
+			<span>See details</span>
+		</div>
+		<div id="See_details_hp">
+			<span>See details</span>
+		</div>
+		<div id="See_details_hq">
+			<span>See details</span>
+		</div>
+		<svg class="Rectangle_145924">
+			<rect id="Rectangle_145924" rx="0" ry="0" x="0" y="0" width="177" height="0">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145926">
+			<rect id="Rectangle_145926" rx="0" ry="0" x="0" y="0" width="177" height="0">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145932">
+			<rect id="Rectangle_145932" rx="0" ry="0" x="0" y="0" width="177" height="0">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145948">
+			<rect id="Rectangle_145948" rx="0" ry="0" x="0" y="0" width="176" height="0">
+			</rect>
+		</svg>
+		<svg class="Rectangle_145949">
+			<rect id="Rectangle_145949" rx="0" ry="0" x="0" y="0" width="174" height="0">
+			</rect>
+		</svg>
+	</div>
+	<div id="header">
+		<svg class="Rectangle_145951">
+			<rect id="Rectangle_145951" rx="0" ry="0" x="0" y="0" width="1280" height="92">
+			</rect>
+		</svg>
+		<img id="SolutionHub-Wide" src="SolutionHub-Wide.png" srcset="SolutionHub-Wide.png 1x, SolutionHub-Wide@2x.png 2x">
+			
 		<div id="Create_a_new_account">
 			<span>Create a new account</span>
 		</div>
@@ -7334,6 +7405,50 @@ window.application = new Application();
 		</div>
 		<div id="or">
 			<span>or</span>
+		</div>
+	</div>
+	<div id="n_2022_UST_PACE_Solution_Hub_v">
+		<span>© 2022, UST PACE Solution Hub v0.3</span>
+	</div>
+	<div id="Social_-_Follow_Wireframe">
+		<div id="Follow_us">
+			<span>Follow us</span>
+		</div>
+		<div id="Icon_-_Facebook">
+			<svg class="background_h">
+				<rect id="background_h" rx="4" ry="4" x="0" y="0" width="40" height="40">
+				</rect>
+			</svg>
+			<div id="icons">
+				<svg class="facebook-176" viewBox="329 7239 10 20">
+					<path id="facebook-176" d="M 335.8212890625 7259 L 335.8212890625 7250 L 338.5536804199219 7250 L 339 7246 L 335.8212890625 7246 L 335.8212890625 7244.0517578125 C 335.8212890625 7243.02197265625 335.8475952148438 7242 337.2868957519531 7242 L 338.7446899414062 7242 L 338.7446899414062 7239.14013671875 C 338.7446899414062 7239.09716796875 337.4924926757812 7239 336.2256774902344 7239 C 333.5800170898438 7239 331.9234008789062 7240.6572265625 331.9234008789062 7243.7001953125 L 331.9234008789062 7246 L 329 7246 L 329 7250 L 331.9234008789062 7250 L 331.9234008789062 7259 L 335.8212890625 7259 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="Icon_-_Instagram">
+			<svg class="background_ia">
+				<rect id="background_ia" rx="4" ry="4" x="0" y="0" width="40" height="40">
+				</rect>
+			</svg>
+			<div id="icons_ib">
+				<svg class="instagram-167" viewBox="284 7279 20 20">
+					<path id="instagram-167" d="M 289.8696594238281 7279.12255859375 C 288.2417602539062 7279.1962890625 286.830810546875 7279.59423828125 285.6914978027344 7280.728515625 C 284.5481872558594 7281.869140625 284.1551513671875 7283.28564453125 284.0815124511719 7284.896484375 C 284.0357360839844 7285.90185546875 283.76806640625 7293.498046875 284.5442199707031 7295.490234375 C 285.0675964355469 7296.833984375 286.0984497070312 7297.86767578125 287.4546813964844 7298.392578125 C 288.0875244140625 7298.638671875 288.8099365234375 7298.8056640625 289.8696594238281 7298.85400390625 C 298.73046875 7299.2548828125 302.0150756835938 7299.03662109375 303.4001770019531 7295.490234375 C 303.6459655761719 7294.85888671875 303.8151245117188 7294.13720703125 303.8618774414062 7293.080078125 C 304.266845703125 7284.19677734375 303.7962036132812 7282.27099609375 302.2519226074219 7280.728515625 C 301.0270080566406 7279.5068359375 299.5862121582031 7278.67529296875 289.8696594238281 7279.12255859375 M 289.9512329101562 7297.0673828125 C 288.9810791015625 7297.02392578125 288.4547119140625 7296.86181640625 288.1034545898438 7296.72607421875 C 287.2198791503906 7296.3828125 286.5561828613281 7295.7216796875 286.2148742675781 7294.84326171875 C 285.6238098144531 7293.32958984375 285.8198547363281 7286.14013671875 285.8725891113281 7284.97705078125 C 285.92431640625 7283.83740234375 286.1551818847656 7282.79638671875 286.9591674804688 7281.9921875 C 287.9541931152344 7280.99951171875 289.2398071289062 7280.51318359375 297.9931335449219 7280.908203125 C 299.1354370117188 7280.9599609375 300.1792297363281 7281.1904296875 300.9852294921875 7281.9921875 C 301.9802551269531 7282.98486328125 302.4738159179688 7284.2802734375 302.0718078613281 7293 C 302.0280151367188 7293.9677734375 301.8658447265625 7294.49267578125 301.7295227050781 7294.84326171875 C 300.8290100097656 7297.15087890625 298.75732421875 7297.4716796875 289.9512329101562 7297.0673828125 M 298.0896606445312 7283.689453125 C 298.0896606445312 7284.3466796875 298.6239929199219 7284.880859375 299.2837219238281 7284.880859375 C 299.9434204101562 7284.880859375 300.478759765625 7284.3466796875 300.478759765625 7283.689453125 C 300.478759765625 7283.03271484375 299.9434204101562 7282.49853515625 299.2837219238281 7282.49853515625 C 298.6239929199219 7282.49853515625 298.0896606445312 7283.03271484375 298.0896606445312 7283.689453125 M 288.8626708984375 7288.98779296875 C 288.8626708984375 7291.802734375 291.1502685546875 7294.0849609375 293.9721984863281 7294.0849609375 C 296.7941284179688 7294.0849609375 299.0817260742188 7291.802734375 299.0817260742188 7288.98779296875 C 299.0817260742188 7286.1728515625 296.7941284179688 7283.89208984375 293.9721984863281 7283.89208984375 C 291.1502685546875 7283.89208984375 288.8626708984375 7286.1728515625 288.8626708984375 7288.98779296875 M 290.6557312011719 7288.98779296875 C 290.6557312011719 7287.16162109375 292.1403198242188 7285.6796875 293.9721984863281 7285.6796875 C 295.8040466308594 7285.6796875 297.2886657714844 7287.16162109375 297.2886657714844 7288.98779296875 C 297.2886657714844 7290.8154296875 295.8040466308594 7292.29736328125 293.9721984863281 7292.29736328125 C 292.1403198242188 7292.29736328125 290.6557312011719 7290.8154296875 290.6557312011719 7288.98779296875">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="Icon_-_Twitter">
+			<svg class="background_ie">
+				<rect id="background_ie" rx="4" ry="4" x="0" y="0" width="40" height="40">
+				</rect>
+			</svg>
+			<div id="icons_if">
+				<svg class="twitter-154" viewBox="4 7361 20 16">
+					<path id="twitter-154" d="M 10.28999996185303 7377 C 17.83699989318848 7377 21.96500015258789 7370.84375 21.96500015258789 7365.50537109375 C 21.96500015258789 7365.330078125 21.96500015258789 7365.15576171875 21.95299911499023 7364.98291015625 C 22.75600051879883 7364.41162109375 23.44899940490723 7363.70263671875 24 7362.8916015625 C 23.25200080871582 7363.21826171875 22.45700073242188 7363.43310546875 21.64399909973145 7363.52734375 C 22.5 7363.0224609375 23.14100074768066 7362.22900390625 23.44799995422363 7361.29248046875 C 22.64200019836426 7361.76318359375 21.76099967956543 7362.09521484375 20.84199905395508 7362.2734375 C 19.28800010681152 7360.64697265625 16.68899917602539 7360.56787109375 15.03600025177002 7362.09814453125 C 13.9709997177124 7363.08447265625 13.51799964904785 7364.55517578125 13.84899997711182 7365.95849609375 C 10.55000019073486 7365.794921875 7.47599983215332 7364.26123046875 5.392000198364258 7361.73779296875 C 4.302999973297119 7363.58349609375 4.860000133514404 7365.9443359375 6.663000106811523 7367.1298828125 C 6.010000228881836 7367.111328125 5.370999813079834 7366.93798828125 4.800000190734863 7366.625 L 4.800000190734863 7366.67626953125 C 4.801000118255615 7368.59912109375 6.177999973297119 7370.2548828125 8.092000007629395 7370.6357421875 C 7.48799991607666 7370.79833984375 6.854000091552734 7370.82177734375 6.239999771118164 7370.70458984375 C 6.776999950408936 7372.35107421875 8.317999839782715 7373.478515625 10.07299995422363 7373.5107421875 C 8.619999885559082 7374.63525390625 6.824999809265137 7375.24560546875 4.97700023651123 7375.24365234375 C 4.651000022888184 7375.24267578125 4.324999809265137 7375.22412109375 4 7375.185546875 C 5.876999855041504 7376.37109375 8.060000419616699 7377 10.28999996185303 7376.9970703125">
+					</path>
+				</svg>
+			</div>
 		</div>
 	</div>
 </div>
